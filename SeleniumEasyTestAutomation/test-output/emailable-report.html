@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">AutomationSuit</th></tr><tr><td><a href="#t0">Regression</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num">5,283</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AutomationSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">seleniumeasy.test.Tests.HomePageTest</td><td><a href="#m0">sAssertAll</a></td><td rowspan="1">1610386700206</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">seleniumeasy.test.Tests.TablePaginationTest</td><td><a href="#m1">closeConnection</a></td><td rowspan="1">1610386699678</td><td rowspan="1">0</td></tr><tr class="failedeven"><td rowspan="1">seleniumeasy.test.Tests.tblDataSearchTest</td><td><a href="#m2">closeConnection</a></td><td rowspan="1">1610386700204</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">seleniumeasy.test.Tests.TablePaginationTest</td><td><a href="#m3">verifyTableHeader</a></td><td rowspan="1">1610386696579</td><td rowspan="1">156</td></tr><tr class="failedodd"><td rowspan="2">seleniumeasy.test.Tests.tblDataSearchTest</td><td><a href="#m4">verifySearchElementBasedOnAssignee</a></td><td rowspan="1">1610386700202</td><td rowspan="1">0</td></tr><tr class="failedodd"><td><a href="#m5">verifySearchElementBasedOnUsername</a></td><td rowspan="1">1610386699681</td><td rowspan="1">517</td></tr><tr><th colspan="4">Regression &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">seleniumeasy.test.Tests.HomePageTest</td><td><a href="#m6">assertAllTests</a></td><td rowspan="1">1610386700207</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">seleniumeasy.test.Tests.HomePageTest</td><td><a href="#m7">verifyTablePaginationMenu</a></td><td rowspan="1">1610386694953</td><td rowspan="1">583</td></tr><tr class="passedodd"><td rowspan="1">seleniumeasy.test.Tests.TablePaginationTest</td><td><a href="#m8">verifyTableContents</a></td><td rowspan="1">1610386696739</td><td rowspan="1">2938</td></tr></tbody></table><h2>Regression</h2><h3 id="m0">seleniumeasy.test.Tests.HomePageTest#sAssertAll</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Type in your search to filter data by Tasks / Assignee / Status] but found [Table with Pagination Example]
+	at seleniumeasy.test.Tests.HomePageTest.sAssertAll(HomePageTest.java:41)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">seleniumeasy.test.Tests.TablePaginationTest#closeConnection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;GODFATHER&apos;, ip: &apos;192.168.86.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at seleniumeasy.qa.Base.Base.postCleanUp(Base.java:88)
+	at seleniumeasy.test.Tests.TablePaginationTest.closeConnection(TablePaginationTest.java:46)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">seleniumeasy.test.Tests.tblDataSearchTest#closeConnection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;GODFATHER&apos;, ip: &apos;192.168.86.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at seleniumeasy.qa.Base.Base.postCleanUp(Base.java:88)
+	at seleniumeasy.test.Tests.tblDataSearchTest.closeConnection(tblDataSearchTest.java:56)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">seleniumeasy.test.Tests.TablePaginationTest#verifyTableHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;GODFATHER&apos;, ip: &apos;192.168.86.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at seleniumeasy.test.Tests.TablePaginationTest.verifyTableHeader(TablePaginationTest.java:30)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">seleniumeasy.test.Tests.tblDataSearchTest#verifySearchElementBasedOnAssignee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;GODFATHER&apos;, ip: &apos;192.168.86.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at seleniumeasy.qa.Page.tblDataSearchPage.searchElement(tblDataSearchPage.java:37)
+	at seleniumeasy.test.Tests.tblDataSearchTest.verifySearchElementBasedOnAssignee(tblDataSearchTest.java:32)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">seleniumeasy.test.Tests.tblDataSearchTest#verifySearchElementBasedOnUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;GODFATHER&apos;, ip: &apos;192.168.86.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isEnabled(Unknown Source)
+	at seleniumeasy.qa.Page.tblDataSearchPage.searchFilterName(tblDataSearchPage.java:57)
+	at seleniumeasy.test.Tests.tblDataSearchTest.verifySearchElementBasedOnUsername(tblDataSearchTest.java:45)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">seleniumeasy.test.Tests.HomePageTest#assertAllTests</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">seleniumeasy.test.Tests.HomePageTest#verifyTablePaginationMenu</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">seleniumeasy.test.Tests.TablePaginationTest#verifyTableContents</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

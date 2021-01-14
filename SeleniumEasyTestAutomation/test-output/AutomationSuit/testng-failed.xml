@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuit]">
+  <listeners>
+    <listener class-name="seleniumeasy.qa.Util.TestListener"/>
+  </listeners>
+  <test name="Regression(failed)">
+    <classes>
+      <class name="seleniumeasy.test.Tests.TablePaginationTest">
+        <methods>
+          <include name="verifyTableHeader"/>
+          <include name="closeConnection"/>
+        </methods>
+      </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
+      <class name="seleniumeasy.test.Tests.tblDataSearchTest">
+        <methods>
+          <include name="verifySearchElementBasedOnAssignee"/>
+          <include name="verifySearchElementBasedOnUsername"/>
+          <include name="closeConnection"/>
+        </methods>
+      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
+      <class name="seleniumeasy.test.Tests.HomePageTest">
+        <methods>
+          <include name="closeConnection"/>
+          <include name="sAssertAll"/>
+        </methods>
+      </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [AutomationSuit] -->
