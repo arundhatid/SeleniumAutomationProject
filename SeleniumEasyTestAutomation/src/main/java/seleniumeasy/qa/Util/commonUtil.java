@@ -6,7 +6,7 @@ import seleniumeasy.qa.Base.Base;
 
 public class commonUtil extends Base {
 	
-	public static String sConfigPath = "D:\\Arundhati\\Testing\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\Config\\config.properties";
+	public static String sConfigPath = "\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\Config\\config.properties";
 	public static int iImplicitWait = 30;
 	
 	
