@@ -13,6 +13,7 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 //import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -65,11 +66,7 @@ public class tblDataSearchTest extends Base
 		}
 		readJSonFile();
 	}
-	@AfterClass
-	public void closeConnection()
-	{
-		postCleanUp();
-	}
+	
 	public void readJSonFile()
 	{
 		FileReader fr = null;
@@ -109,4 +106,17 @@ public class tblDataSearchTest extends Base
 		
 		
 	}
+	@AfterClass
+	public void assertAllTests()
+	{
+		postCleanUp("TableDataSearch");
+		sAssert.assertAll();
+		
+	}
+	/*@AfterClass
+	public void closeConnection()
+	{
+		//postCleanUp();
+	}*/
+
 }

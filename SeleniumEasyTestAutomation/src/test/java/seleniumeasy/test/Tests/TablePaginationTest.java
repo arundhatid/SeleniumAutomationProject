@@ -35,14 +35,16 @@ public class TablePaginationTest extends Base
 	{
 		obj.readTableContents();
 	}
-	@AfterTest
+	@AfterClass
 	public void assertAllTests()
 	{
+		postCleanUp("TablePaginationTest");
 		sAssert.assertAll();
+		
 	}
-	@AfterClass
+	/*@AfterClass
 	public void closeConnection()
 	{
-		postCleanUp();
-	}
+		//postCleanUp();
+	}*/
 }

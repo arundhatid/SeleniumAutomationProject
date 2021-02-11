@@ -22,7 +22,7 @@ import seleniumeasy.qa.Util.commonUtil;
  */
 public class Base {
 	
-	public static WebDriver driver;
+	protected static WebDriver driver=null;
 	private static FileInputStream fis;
 	private static Properties prop;
 	
@@ -46,43 +46,48 @@ public class Base {
 	
 	public void Init()
 	{
-		if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
+		if(driver==null)
 		{
-			System.setProperty(prop.getProperty("chromekey"),prop.getProperty("chromepath"));
-			driver = new ChromeDriver();			
-		}
-		if(prop.getProperty("browser").equalsIgnoreCase("edge"))
-		{
-			System.setProperty(prop.getProperty("edgekey"),prop.getProperty("edgepath"));
-			driver = new EdgeDriver();			
-		}
-		if(prop.getProperty("browser").equalsIgnoreCase("ff"))
-		{
-			System.setProperty(prop.getProperty("ffkey"),prop.getProperty("ffpath"));
-			driver = new FirefoxDriver();			
-		}
-		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-
-		driver.manage().timeouts().implicitlyWait(commonUtil.iImplicitWait, TimeUnit.SECONDS);
-		driver.manage().window().maximize();		
-		driver.get(prop.getProperty("url"));
-		
-		
-		/*Alert alt = driver.switchTo().alert();
-		alt.dismiss();*/
-		
-		
-		driver.findElement(By.linkText("No, thanks!")).click();
-		
-				
+			if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
+			{
+				System.setProperty(prop.getProperty("chromekey"),prop.getProperty("chromepath"));
+				driver = new ChromeDriver();			
+			}
+			if(prop.getProperty("browser").equalsIgnoreCase("edge"))
+			{
+				System.setProperty(prop.getProperty("edgekey"),prop.getProperty("edgepath"));
+				driver = new EdgeDriver();			
+			}
+			if(prop.getProperty("browser").equalsIgnoreCase("ff"))
+			{
+				System.setProperty(prop.getProperty("ffkey"),prop.getProperty("ffpath"));
+				driver = new FirefoxDriver();			
+			}
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+	
+			driver.manage().timeouts().implicitlyWait(commonUtil.iImplicitWait, TimeUnit.SECONDS);
+			driver.manage().window().maximize();		
+			driver.get(prop.getProperty("url"));
+			
+			
+			/*Alert alt = driver.switchTo().alert();
+			alt.dismiss();*/
+			
+			
+			driver.findElement(By.linkText("No, thanks!")).click();
+			
+		}		
 		
 		
 	}
 	
-	public static void postCleanUp()
+	public static void postCleanUp(String sTestName)
 	{
+		System.out.println("I came here from : + " + sTestName);
 		driver.close();
 		driver.quit();
+		driver=null;
 		try {
 			fis.close();
 		} catch (IOException e) {

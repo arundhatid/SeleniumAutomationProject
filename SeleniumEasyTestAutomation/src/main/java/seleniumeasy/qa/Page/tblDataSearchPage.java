@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import seleniumeasy.qa.Base.Base;
+import org.testng.Reporter;
 
 public class tblDataSearchPage extends Base{
 
@@ -38,6 +39,7 @@ public class tblDataSearchPage extends Base{
 		WebElement currentElement = driver.switchTo().activeElement();
 		//currentElement.sendKeys("something");
 		txtSearch.sendKeys("Smith");
+		Reporter.log("Test Data is : Smith");
 		System.out.println("I came here");
 		return txtSearch.getAttribute("value");
 		//txtSearch.sendKeys(Keys.RETURN);
@@ -66,7 +68,7 @@ public class tblDataSearchPage extends Base{
 			txtUserName.click();
 			txtUserName.sendKeys("markino");
 			txtUserName.sendKeys(Keys.TAB);
-			
+			Reporter.log("TestData is:markino");
 			System.out.println("I was here");
 			System.out.println("txtUserName value here is: " + txtUserName.getAttribute("value"));
 			return txtUserName.getAttribute("value");
