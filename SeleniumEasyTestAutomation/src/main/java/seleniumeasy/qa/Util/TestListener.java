@@ -1,19 +1,43 @@
 package seleniumeasy.qa.Util;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListener implements ITestListener
+import io.github.bonigarcia.wdm.WebDriverManager;
+import seleniumeasy.qa.Base.Base;
+
+public class TestListener extends Base implements ITestListener
 {
 
 	/* (non-Javadoc)
 	 * @see org.testng.ITestListener#onTestFailure(org.testng.ITestResult)
 	 */
+	@SuppressWarnings("deprecation")
 	public void onTestFailure(ITestResult result) {
+		final SimpleDateFormat simpleFormat = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestFailure(result);
 		System.out.println("THe failed test is: " + result.getName());
+		
+		
+		
+		//webManager
+		//ITestContext iContext = result.getTestContext();
+		//ITestContext iContext1 = commonUtil.setContext(iContext, (WebDriver) iContext.getAttribute("driver"));
+		//WebDriver sdriver = (WebDriver) iContext.getAttribute("driver");
+		System.out.println(result.getTestContext().getAttributeNames());
+		//WebDriver driver = (WebDriver) result.getTestContext().getAttribute("WebDriver");
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		
+		String sFileName =  result.getName() + "_" + simpleFormat.format(timestamp);
+		System.out.println("sFileName is:" + sFileName);
+		commonUtil.takeScreenShot(sFileName);
+		
 	}
 
 	/* (non-Javadoc)

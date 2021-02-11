@@ -1,19 +1,14 @@
 package seleniumeasy.test.Tests;
-import seleniumeasy.qa.TestData.*;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Set;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.Listeners;
 //import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -25,6 +20,8 @@ import seleniumeasy.qa.Page.tblPaginationPage;
 //@Listeners(seleniumeasy.qa.Util.TestListener.class)
 //Comment to push data 
 //one more comment added
+
+@Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class tblDataSearchTest extends Base
 {
 
@@ -53,6 +50,7 @@ public class tblDataSearchTest extends Base
 			String sAssignee = driver.findElement(By.xpath("//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]")).getText();
 			sAssert.assertEquals(sAssignee, sEnteredText);
 		}
+		sAssert.assertAll();
 	}
 	@Test(priority='a')
 	public void verifySearchElementBasedOnUsername()
@@ -109,8 +107,10 @@ public class tblDataSearchTest extends Base
 	@AfterClass
 	public void assertAllTests()
 	{
-		postCleanUp("TableDataSearch");
-		sAssert.assertAll();
+		System.out.println("I am in TableDataSerch AfterClass");
+		
+		postCleanUp("TableDataSearch",driver);
+		
 		
 	}
 	/*@AfterClass

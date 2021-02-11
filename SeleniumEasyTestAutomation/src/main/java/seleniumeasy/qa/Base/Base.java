@@ -22,12 +22,13 @@ import seleniumeasy.qa.Util.commonUtil;
  */
 public class Base {
 	
-	protected static WebDriver driver=null;
+	protected static WebDriver driver;
 	private static FileInputStream fis;
 	private static Properties prop;
 	
 	public Base()
 	{
+		System.out.println("I am in Base constructor");
 		try {
 			fis = new FileInputStream(commonUtil.sConfigPath);
 		} catch (FileNotFoundException e) {
@@ -46,8 +47,11 @@ public class Base {
 	
 	public void Init()
 	{
-		if(driver==null)
-		{
+		System.out.println("I am inside Init.");
+		
+		//if(driver==null)
+		//{
+			System.out.println("I am inside If:");
 			if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 			{
 				System.setProperty(prop.getProperty("chromekey"),prop.getProperty("chromepath"));
@@ -80,20 +84,23 @@ public class Base {
 		}		
 		
 		
-	}
+	//}
 	
-	public static void postCleanUp(String sTestName)
+	public void postCleanUp(String sTestName,WebDriver driver1)
 	{
-		System.out.println("I came here from : + " + sTestName);
-		driver.close();
-		driver.quit();
-		driver=null;
-		try {
+		System.out.println("I am in postcleanup from: + " + sTestName);
+		driver1.close();
+		driver1.quit();
+		driver1=null;
+		/*try {
 			fis.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 	}
+	
+	
+	
 }
