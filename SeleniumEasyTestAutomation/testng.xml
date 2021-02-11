@@ -5,6 +5,7 @@
   
   	<listeners>
   		<listener class-name="seleniumeasy.qa.Util.TestListener"/>
+  		<listener class-name="seleniumeasy.qa.Util.ExtentReportListener"/>
   	</listeners>
   <test name="Regression">
     <classes>

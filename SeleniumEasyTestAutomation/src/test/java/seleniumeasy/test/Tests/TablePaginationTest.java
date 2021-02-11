@@ -42,7 +42,7 @@ public class TablePaginationTest extends Base
 	{
 		System.out.println("I am in TablePaginationTest AfterClass");
 		//sAssert.assertAll();
-		postCleanUp("TablePaginationTest",driver);
+		//postCleanUp("TablePaginationTest",driver);
 	}
 	/*@AfterClass
 	public void closeConnection()

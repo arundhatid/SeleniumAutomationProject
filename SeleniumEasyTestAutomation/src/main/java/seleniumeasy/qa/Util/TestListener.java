@@ -8,7 +8,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import seleniumeasy.qa.Base.Base;
 
 public class TestListener extends Base implements ITestListener
