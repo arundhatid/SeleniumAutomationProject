@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumeasy.test.Tests.tblDataSearchTest">
+      <class name="seleniumeasy.test.Tests.HomePageTest">
         <methods>
-          <include name="verifySearchElementBasedOnUsername"/>
-          <include name="closeConnection"/>
+          <include name="verifyTablePaginationMenu"/>
+          <include name="sAssertAll"/>
         </methods>
-      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
+      </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

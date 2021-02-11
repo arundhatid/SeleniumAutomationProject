@@ -6,6 +6,11 @@
   </listeners>
   <test name="Regression(failed)">
     <classes>
+      <class name="seleniumeasy.test.Tests.HomePageTest">
+        <methods>
+          <include name="sAssertAll"/>
+        </methods>
+      </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
       <class name="seleniumeasy.test.Tests.TablePaginationTest">
         <methods>
           <include name="verifyTableHeader"/>
@@ -13,12 +18,6 @@
           <include name="assertAllTests"/>
         </methods>
       </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
-      <class name="seleniumeasy.test.Tests.HomePageTest">
-        <methods>
-          <include name="verifyTablePaginationMenu"/>
-          <include name="sAssertAll"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
       <class name="seleniumeasy.test.Tests.tblDataSearchTest">
         <methods>
           <include name="verifySearchElementBasedOnAssignee"/>
