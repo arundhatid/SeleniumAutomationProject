@@ -7,7 +7,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 //import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -30,6 +31,11 @@ public class tblDataSearchTest extends Base
 	tblDataSearchPage obj;
 	
 	public tblDataSearchTest()
+	{
+		
+	}
+	@BeforeMethod
+	public void setUp()
 	{
 		Init();
 		sAssert = new SoftAssert();
@@ -104,14 +110,16 @@ public class tblDataSearchTest extends Base
 		
 		
 	}
-	@AfterClass
+	@AfterMethod
 	public void assertAllTests()
 	{
 		System.out.println("I am in TableDataSerch AfterClass");
 		
 		//postCleanUp("TableDataSearch",driver);
 		
-		
+		driver.close();
+		driver.quit();
+
 	}
 	/*@AfterClass
 	public void closeConnection()

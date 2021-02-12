@@ -3,7 +3,8 @@ package seleniumeasy.test.Tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -19,17 +20,20 @@ public class HomePageTest extends Base
 	public HomePage obj;
 	public tblPaginationPage tblObj;
 	SoftAssert sAssert;
-	
-	
-	
+		
 	public HomePageTest()
+	{
+		
+		
+	}
+	
+	@BeforeMethod
+	public void setUp()
 	{
 		Init();
 		obj = new HomePage();
 		sAssert = new SoftAssert();
-		
 	}
-	
 	@Test
 	public void verifyTablePaginationMenu()
 	{
@@ -43,13 +47,14 @@ public class HomePageTest extends Base
 		sAssert.assertAll();
 		
 	}
-	@AfterClass	
-	public void sAssertAll()
+	@AfterMethod
+	public void postCleanUp()
 	{
 		System.out.println("I am in HomePage AfterClass");
 		//System.out.println("I came here");
 		//postCleanUp("HomePageTest",driver);
-		
+		driver.close();
+		driver.quit();
 		
 	}
 	/*@AfterClass

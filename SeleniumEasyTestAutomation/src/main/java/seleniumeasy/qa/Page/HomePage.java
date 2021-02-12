@@ -23,6 +23,7 @@ public class HomePage extends Base
 	
 	public tblPaginationPage clickTablePagination()
 	{
+		//driver.manage().window().fullscreen();
 		menuTable.click();
 		menuTablePgn.click();
 		return new tblPaginationPage();

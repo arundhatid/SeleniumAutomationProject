@@ -1,7 +1,8 @@
 package seleniumeasy.test.Tests;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -18,10 +19,15 @@ public class TablePaginationTest extends Base
 	tblPaginationPage obj;
 	public TablePaginationTest()
 	{
+			}
+	@BeforeMethod
+	public void setUp()
+	{
 		Init();
 		sAssert = new SoftAssert();
 		hObj = new HomePage();
 		obj = hObj.clickTablePagination();
+
 	}
 
 	@Test(priority=1)
@@ -37,12 +43,15 @@ public class TablePaginationTest extends Base
 		obj.readTableContents();
 		sAssert.assertAll();
 	}
-	@AfterClass
+	@AfterMethod
 	public void assertAllTests()
 	{
 		System.out.println("I am in TablePaginationTest AfterClass");
 		//sAssert.assertAll();
 		//postCleanUp("TablePaginationTest",driver);
+		driver.close();
+		driver.quit();
+
 	}
 	/*@AfterClass
 	public void closeConnection()
