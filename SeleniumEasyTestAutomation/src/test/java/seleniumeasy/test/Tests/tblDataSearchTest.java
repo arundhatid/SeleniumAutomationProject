@@ -8,6 +8,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 //import org.testng.annotations.Listeners;
@@ -56,9 +57,9 @@ public class tblDataSearchTest extends Base
 			String sAssignee = driver.findElement(By.xpath("//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]")).getText();
 			sAssert.assertEquals(sAssignee, sEnteredText);
 		}
-		sAssert.assertAll();
+		//sAssert.assertAll();
 	}
-	@Test(priority='a')
+	//@Test(priority='a')
 	public void verifySearchElementBasedOnUsername()
 	{		
 		String sEnteredText = obj.searchFilterName();
@@ -120,6 +121,11 @@ public class tblDataSearchTest extends Base
 		driver.close();
 		driver.quit();
 
+	}
+	@AfterTest()
+	public void assertAll()
+	{
+		sAssert.assertAll();
 	}
 	/*@AfterClass
 	public void closeConnection()

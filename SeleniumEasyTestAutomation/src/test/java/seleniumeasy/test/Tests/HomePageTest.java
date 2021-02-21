@@ -9,6 +9,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import seleniumeasy.qa.Base.Base;
 import seleniumeasy.qa.Page.HomePage;
 import seleniumeasy.qa.Page.tblPaginationPage;
@@ -35,6 +38,8 @@ public class HomePageTest extends Base
 		sAssert = new SoftAssert();
 	}
 	@Test
+	@Severity(SeverityLevel.NORMAL)
+	@Description("test case description :  Verify Table Pagination Menu Open")
 	public void verifyTablePaginationMenu()
 	{
 		Reporter.log("Test Name is: verifyTablePaginationMenu");
@@ -44,7 +49,7 @@ public class HomePageTest extends Base
 		sAssert.assertEquals("Table with Pagination Examples", sPageTitle.getText());
 		//commonUtil.takeScreenShot(driver, "firstScreenShot");
 		
-		sAssert.assertAll();
+		
 		
 	}
 	@AfterMethod
@@ -56,6 +61,11 @@ public class HomePageTest extends Base
 		driver.close();
 		driver.quit();
 		
+	}
+	//@AfterTest()
+	public void assertAll()
+	{
+		//sAssert.assertAll();
 	}
 	/*@AfterClass
 	public void closeConnection()

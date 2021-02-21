@@ -2,13 +2,21 @@ package seleniumeasy.qa.Util;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
+import org.testng.Reporter;
 
 import seleniumeasy.qa.Base.Base;
 
@@ -67,5 +75,64 @@ public class commonUtil extends Base {
 		return iTestContext;
 		
 	}
-	
+	public static void testBrokenLinks()
+	{
+		int iCount=0;
+		String sURL;
+		List <WebElement> sLinkName = driver.findElements(By.tagName("a"));
+		System.out.println("The Number of hyperlinks are : " + sLinkName.size());
+		Iterator <WebElement> itr = sLinkName.iterator();
+		while(itr.hasNext())
+		{
+			
+			sURL = itr.next().getAttribute("href");
+			if(sURL == null || sURL.isEmpty())
+			{
+				System.out.println("URL is not configured for anchor tag or it is empty");
+				continue;
+			}
+
+			try
+			{
+				URL url = new URL(sURL);
+				HttpURLConnection con = (HttpURLConnection)url.openConnection();
+				con.setConnectTimeout(2000);
+				con.connect();
+				if(con.getResponseCode()>=400)
+				{
+					System.out.println(sURL + "  is broken link");
+					Reporter.log(sURL + "  is broken link");
+					iCount++;
+				}
+				else
+				{
+					System.out.println(sURL + "  is valid link");
+					Reporter.log(sURL + "  is valid link");
+				}
+			}
+			catch(MalformedURLException e)
+			{
+				e.printStackTrace();
+				Reporter.log("MalformedURLException: " + sURL);
+				
+				System.out.println("MalformedURLException: " + sURL);
+			}
+			catch(Exception e1)
+			{
+				e1.printStackTrace();
+				Reporter.log("Exception: " + sURL );
+				
+				System.out.println("Exception: " + sURL);
+			}
+			
+		}
+		System.out.println("The Number of Broken Links are: " + iCount);
+		
+	}
 }
+			
+			
+				
+				
+
+			

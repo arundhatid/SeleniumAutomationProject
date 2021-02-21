@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.qameta.allure.Step;
 import seleniumeasy.qa.Base.Base;
 
 public class HomePage extends Base
@@ -21,6 +22,7 @@ public class HomePage extends Base
 		PageFactory.initElements(driver, this);
 	}
 	
+	@Step("Click on Table Pagination Menu step.")
 	public tblPaginationPage clickTablePagination()
 	{
 		//driver.manage().window().fullscreen();

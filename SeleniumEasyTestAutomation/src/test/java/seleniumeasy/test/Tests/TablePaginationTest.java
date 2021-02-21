@@ -2,6 +2,7 @@ package seleniumeasy.test.Tests;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -41,7 +42,7 @@ public class TablePaginationTest extends Base
 	public void verifyTableContents()
 	{
 		obj.readTableContents();
-		sAssert.assertAll();
+		//sAssert.assertAll();
 	}
 	@AfterMethod
 	public void assertAllTests()
@@ -53,9 +54,4 @@ public class TablePaginationTest extends Base
 		driver.quit();
 
 	}
-	/*@AfterClass
-	public void closeConnection()
-	{
-		//postCleanUp();
-	}*/
-}
+	}

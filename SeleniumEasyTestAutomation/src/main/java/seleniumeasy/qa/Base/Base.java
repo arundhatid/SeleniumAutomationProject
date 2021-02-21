@@ -28,7 +28,7 @@ public class Base {
 	
 	public Base()
 	{
-		System.out.println("I am in Base constructor");
+		//System.out.println("I am in Base constructor");
 		try {
 			fis = new FileInputStream(commonUtil.sConfigPath);
 		} catch (FileNotFoundException e) {
@@ -47,7 +47,7 @@ public class Base {
 	
 	public void Init()
 	{
-		System.out.println("I am inside Init.");
+		//System.out.println("I am inside Init.");
 		
 		//if(driver==null)
 		//{
@@ -88,7 +88,7 @@ public class Base {
 	
 	public void postCleanUp(String sTestName,WebDriver driver1)
 	{
-		System.out.println("I am in postcleanup from: + " + sTestName);
+		//System.out.println("I am in postcleanup from: + " + sTestName);
 		driver1.close();
 		driver1.quit();
 		driver1=null;
