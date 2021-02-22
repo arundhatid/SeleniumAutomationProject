@@ -6,12 +6,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import io.qameta.allure.Step;
 import seleniumeasy.qa.Base.Base;
-import org.openqa.selenium.JavascriptExecutor;
 
 public class tblDataSearchPage extends Base{
 
@@ -29,6 +27,7 @@ public class tblDataSearchPage extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@Step("Filter results based on username")
 	public String searchElement() 
 	{
 		//((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", txtSearch);
@@ -51,6 +50,7 @@ public class tblDataSearchPage extends Base{
 		//txtSearch.sendKeys(Keys.RETURN);
 				
 	}
+	@Step("Filter results based on Asignee")
 	public String searchFilterName() //throws InterruptedException
 	{
 		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnFilter);

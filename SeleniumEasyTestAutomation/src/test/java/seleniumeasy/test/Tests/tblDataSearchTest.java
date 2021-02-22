@@ -15,6 +15,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import seleniumeasy.qa.Base.Base;
 import seleniumeasy.qa.Page.tblDataSearchPage;
 import seleniumeasy.qa.Page.tblPaginationPage;
@@ -44,7 +47,9 @@ public class tblDataSearchTest extends Base
 		obj = tObj.clickTableDataSearchMenu();		
 
 	}
-	@Test(priority='b')
+	@Test(priority='b',description="Verify Search Based on Asignee Criteria")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Test Description: Search Test Based On Asignee")
 	public void verifySearchElementBasedOnAssignee()
 	{
 		String sEnteredText;
@@ -59,7 +64,9 @@ public class tblDataSearchTest extends Base
 		}
 		//sAssert.assertAll();
 	}
-	//@Test(priority='a')
+	@Test(priority='a',description="Verify Search Based on Username Criteria")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Test Description: Search Test Based On Username")
 	public void verifySearchElementBasedOnUsername()
 	{		
 		String sEnteredText = obj.searchFilterName();

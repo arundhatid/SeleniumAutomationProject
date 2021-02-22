@@ -24,11 +24,7 @@ public class HomePageTest extends Base
 	public tblPaginationPage tblObj;
 	SoftAssert sAssert;
 		
-	public HomePageTest()
-	{
-		
-		
-	}
+	
 	
 	@BeforeMethod
 	public void setUp()
@@ -37,9 +33,9 @@ public class HomePageTest extends Base
 		obj = new HomePage();
 		sAssert = new SoftAssert();
 	}
-	@Test
+	@Test(description="Verify Table Pagination Menu Opens successfully")
 	@Severity(SeverityLevel.NORMAL)
-	@Description("test case description :  Verify Table Pagination Menu Open")
+	@Description("test Description :  Verify Table Pagination Menu Open")
 	public void verifyTablePaginationMenu()
 	{
 		Reporter.log("Test Name is: verifyTablePaginationMenu");

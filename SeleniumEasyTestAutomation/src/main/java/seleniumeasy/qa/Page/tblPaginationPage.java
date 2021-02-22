@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.qameta.allure.Step;
 import seleniumeasy.qa.Base.Base;
 
 public class tblPaginationPage extends Base
@@ -35,6 +36,7 @@ public class tblPaginationPage extends Base
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Verify table healders")
 	public String readTableHeader()
 	{
 		String sHeading="";
@@ -49,6 +51,7 @@ public class tblPaginationPage extends Base
 		return sHeading;
 	}
 	
+	@Step("Read table contents")
 	public void readTableContents()
 	{
 		for(WebElement row : tblContents)
