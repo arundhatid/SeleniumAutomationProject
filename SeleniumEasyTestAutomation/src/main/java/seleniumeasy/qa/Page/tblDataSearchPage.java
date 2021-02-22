@@ -22,6 +22,12 @@ public class tblDataSearchPage extends Base{
 	@FindBy(xpath="//input[@placeholder='Username']")
 	WebElement txtUserName;
 	
+	@FindBy(linkText="Alerts & Modals")
+	WebElement mnuAlertsModals;
+	
+	@FindBy(linkText="Window Popup Modal")
+	WebElement mnuWindowPopupModal;
+	
 	public tblDataSearchPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -80,6 +86,14 @@ public class tblDataSearchPage extends Base{
 			return txtUserName.getAttribute("value");
 		}
 		
+		
+	}
+	
+	public managePopupWindowPage clickAlertsModalsMenu()
+	{
+		mnuAlertsModals.click();
+		mnuWindowPopupModal.click();
+		return new managePopupWindowPage();
 		
 	}
 }

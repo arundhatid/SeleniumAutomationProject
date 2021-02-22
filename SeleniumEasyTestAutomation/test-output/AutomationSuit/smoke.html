@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 22 18:45:02 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82422 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='seleniumeasy.test.Tests.BrokenLinkTest.testBrokenLinks()'><b>testBrokenLinks</b><br>Test class: seleniumeasy.test.Tests.BrokenLinkTest<br>Test method: Find the number of broken links in website<br/>
+<a href="#Output-1758910325" onClick='toggleBox("Output-1758910325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1758910325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1758910325">
+https://www.seleniumeasy.com/  is valid link<br/>
+https://www.seleniumeasy.com/  is valid link<br/>
+https://crossbrowsertesting.com/?utm_source=seleniumeasy&utm_medium=da&utm_campaign=sedemo  is valid link<br/>
+https://www.seleniumeasy.com/test  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-first-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-checkbox-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-radiobutton-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/input-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/ajax-form-submit-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dropdown-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-date-picker-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/table-pagination-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-search-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-records-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-sort-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-data-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-download-progress-bar-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-drop-range-sliders-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-alert-messages-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/window-popup-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-progress-bar-dialog-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/javascript-alert-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/generate-file-to-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/data-list-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-and-drop-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/charts-mouse-hover-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#carousel-example-generic  is valid link<br/>
+https://www.seleniumeasy.com/test/#carousel-example-generic  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-first-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-checkbox-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-radiobutton-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/input-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/ajax-form-submit-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dropdown-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-date-picker-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/table-pagination-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-search-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-records-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-sort-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-data-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-download-progress-bar-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-drop-range-sliders-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-alert-messages-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/window-popup-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-progress-bar-dialog-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/javascript-alert-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/generate-file-to-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/data-list-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-and-drop-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/charts-mouse-hover-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/#home  is valid link<br/>
+https://www.seleniumeasy.com/test/#basic  is valid link<br/>
+https://www.seleniumeasy.com/test/#intermediate  is valid link<br/>
+https://www.seleniumeasy.com/test/#advanced  is valid link<br/>
+https://www.seleniumeasy.com/test/#completed  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-first-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-checkbox-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-radiobutton-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/javascript-alert-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/window-popup-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-alert-messages-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-modal-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/input-form-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/ajax-form-submit-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dropdown-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-dual-list-box-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/data-list-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-progress-bar-dialog-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/generate-file-to-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-pagination-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-search-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-records-filter-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-sort-search-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/table-data-download-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/jquery-download-progress-bar-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-drop-range-sliders-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/drag-and-drop-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/test/charts-mouse-hover-demo.html  is valid link<br/>
+https://www.seleniumeasy.com/selenium-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/testng-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/junit-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/jxl-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/apachepoi-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/ant-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/maven-tutorials  is valid link<br/>
+https://www.seleniumeasy.com/selenium-tutorials/launching-firefox-browser-with-geckodriver-selenium-3  is valid link<br/>
+https://www.seleniumeasy.com/selenium-tutorials/page-factory-pattern-in-selenium-webdriver  is valid link<br/>
+https://www.seleniumeasy.com/jenkins-tutorials/invoke-testng-xml-tests-from-jenkins  is valid link<br/>
+https://www.seleniumeasy.com/testng-tutorials/testng-customize-emailable-html-report-example  is valid link<br/>
+https://www.seleniumeasy.com/maven-tutorials/how-to-execute-selenium-webdriver-testng-xml-using-maven  is valid link<br/>
+https://www.seleniumeasy.com/selenium-webdriver-tutorials  is valid link<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>seleniumeasy.test.Tests.BrokenLinkTest@7c22d4f</td></tr>
+<tr>
+<td title='seleniumeasy.test.Tests.ManagePopupWindowTest.testBtnFollowOnTwitter()'><b>testBtnFollowOnTwitter</b><br>Test class: seleniumeasy.test.Tests.ManagePopupWindowTest<br>Test method: Verify that popup for Twitter window close successfully</td>
+<td></td>
+<td>4</td>
+<td>seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e</td></tr>
+<tr>
+<td title='seleniumeasy.test.Tests.ManagePopupWindowTest.verifyFollowAll()'><b>verifyFollowAll</b><br>Test class: seleniumeasy.test.Tests.ManagePopupWindowTest<br>Test method: Verify that all pop up windows close successfully</td>
+<td></td>
+<td>9</td>
+<td>seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e</td></tr>
+</table><p>
+</body>
+</html>

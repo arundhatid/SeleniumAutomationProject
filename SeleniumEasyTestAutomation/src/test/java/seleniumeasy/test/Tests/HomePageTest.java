@@ -22,7 +22,7 @@ public class HomePageTest extends Base
 
 	public HomePage obj;
 	public tblPaginationPage tblObj;
-	SoftAssert sAssert;
+	//SoftAssert sAssert;
 		
 	
 	
@@ -31,7 +31,7 @@ public class HomePageTest extends Base
 	{
 		Init();
 		obj = new HomePage();
-		sAssert = new SoftAssert();
+		//sAssert = new SoftAssert();
 	}
 	@Test(description="Verify Table Pagination Menu Opens successfully")
 	@Severity(SeverityLevel.NORMAL)
@@ -51,7 +51,7 @@ public class HomePageTest extends Base
 	@AfterMethod
 	public void postCleanUp()
 	{
-		System.out.println("I am in HomePage AfterClass");
+		//System.out.println("I am in HomePage AfterClass");
 		//System.out.println("I came here");
 		//postCleanUp("HomePageTest",driver);
 		driver.close();

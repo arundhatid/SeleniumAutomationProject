@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-AutomationSuit">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.BrokenLinkTest" hash-for-method="testBrokenLinks">testBrokenLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.ManagePopupWindowTest" hash-for-method="testBtnFollowOnTwitter">testBtnFollowOnTwitter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.ManagePopupWindowTest" hash-for-method="verifyFollowAll">verifyFollowAll</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -145,16 +155,16 @@
           <div class="suite-AutomationSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">seleniumeasy.test.Tests.BrokenLinkTest</span>
+              <span class="class-name">seleniumeasy.test.Tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBrokenLinks">
-                  </a> <!-- testBrokenLinks -->
-                  <span class="method-name">testBrokenLinks</span>
+                  <a name="verifyTablePaginationMenu">
+                  </a> <!-- verifyTablePaginationMenu -->
+                  <span class="method-name">verifyTablePaginationMenu</span>
                   <em>
-(Find the number of broken links in website)                  </em>
+(Verify Table Pagination Menu Opens successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,6 +198,23 @@
           <div class="suite-AutomationSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">seleniumeasy.test.Tests.BrokenLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrokenLinks">
+                  </a> <!-- testBrokenLinks -->
+                  <span class="method-name">testBrokenLinks</span>
+                  <em>
+(Find the number of broken links in website)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuit-class-passed -->
+          <div class="suite-AutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">seleniumeasy.test.Tests.TablePaginationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -214,16 +241,25 @@
           <div class="suite-AutomationSuit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">seleniumeasy.test.Tests.HomePageTest</span>
+              <span class="class-name">seleniumeasy.test.Tests.ManagePopupWindowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTablePaginationMenu">
-                  </a> <!-- verifyTablePaginationMenu -->
-                  <span class="method-name">verifyTablePaginationMenu</span>
+                  <a name="testBtnFollowOnTwitter">
+                  </a> <!-- testBtnFollowOnTwitter -->
+                  <span class="method-name">testBtnFollowOnTwitter</span>
                   <em>
-(Verify Table Pagination Menu Opens successfully)                  </em>
+(Verify that popup for Twitter window close successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFollowAll">
+                  </a> <!-- verifyFollowAll -->
+                  <span class="method-name">verifyFollowAll</span>
+                  <em>
+(Verify that all pop up windows close successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,12 +278,17 @@
     &lt;listener class-name=&quot;seleniumeasy.qa.Util.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;seleniumeasy.qa.Util.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test name=&quot;smoke&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;seleniumeasy.test.Tests.BrokenLinkTest&quot;/&gt;
+      &lt;class name=&quot;seleniumeasy.test.Tests.ManagePopupWindowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- smoke --&gt;
   &lt;test name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;seleniumeasy.test.Tests.HomePageTest&quot;/&gt;
       &lt;class name=&quot;seleniumeasy.test.Tests.TablePaginationTest&quot;/&gt;
       &lt;class name=&quot;seleniumeasy.test.Tests.tblDataSearchTest&quot;/&gt;
-      &lt;class name=&quot;seleniumeasy.test.Tests.BrokenLinkTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- AutomationSuit --&gt;
@@ -261,7 +302,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression (4 classes)</span>
+                <span class="test-name">smoke (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,36 +331,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testBrokenLinks')
 data.setCell(0, 2, 'seleniumeasy.test.Tests.BrokenLinkTest')
-data.setCell(0, 3, 34288);
+data.setCell(0, 3, 35918);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyTableContents')
-data.setCell(1, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
-data.setCell(1, 3, 2611);
+data.setCell(1, 1, 'verifyFollowAll')
+data.setCell(1, 2, 'seleniumeasy.test.Tests.ManagePopupWindowTest')
+data.setCell(1, 3, 9202);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySearchElementBasedOnUsername')
-data.setCell(2, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(2, 3, 956);
+data.setCell(2, 1, 'testBtnFollowOnTwitter')
+data.setCell(2, 2, 'seleniumeasy.test.Tests.ManagePopupWindowTest')
+data.setCell(2, 3, 4540);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyTablePaginationMenu')
-data.setCell(3, 2, 'seleniumeasy.test.Tests.HomePageTest')
-data.setCell(3, 3, 575);
+data.setCell(3, 1, 'verifyTableContents')
+data.setCell(3, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
+data.setCell(3, 3, 2511);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySearchElementBasedOnAssignee')
+data.setCell(4, 1, 'verifySearchElementBasedOnUsername')
 data.setCell(4, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(4, 3, 195);
+data.setCell(4, 3, 954);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyTableHeader')
-data.setCell(5, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
-data.setCell(5, 3, 184);
+data.setCell(5, 1, 'verifyTablePaginationMenu')
+data.setCell(5, 2, 'seleniumeasy.test.Tests.HomePageTest')
+data.setCell(5, 3, 901);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifySearchElementBasedOnAssignee')
+data.setCell(6, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
+data.setCell(6, 3, 192);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyTableHeader')
+data.setCell(7, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
+data.setCell(7, 3, 154);
 window.suiteTableData['AutomationSuit']= { tableData: data, tableDiv: 'times-div-AutomationSuit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-AutomationSuit">
               </div> <!-- times-div-AutomationSuit -->
             </div> <!-- times-div -->
@@ -327,24 +379,6 @@ return data;
             <span class="header-content">Reporter output for AutomationSuit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySearchElementBasedOnAssignee</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Data is : Smith</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyTablePaginationMenu</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Name is: verifyTablePaginationMenu</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySearchElementBasedOnUsername</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">TestData is:markino</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testBrokenLinks</span>
               <div class="reporter-method-output-div">
@@ -474,6 +508,24 @@ return data;
                 <span class="reporter-method-output">https://www.seleniumeasy.com/selenium-webdriver-tutorials  is valid link</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyTablePaginationMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Name is: verifyTablePaginationMenu</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySearchElementBasedOnAssignee</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Data is : Smith</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySearchElementBasedOnUsername</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TestData is:markino</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-AutomationSuit" class="panel">
@@ -489,97 +541,119 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">seleniumeasy.test.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">seleniumeasy.test.Tests.BrokenLinkTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyTablePaginationMenu</span>
-                <span class="method-start">10769 ms</span>
+                <span class="method-name">testBrokenLinks</span>
+                <span class="method-start">12046 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCleanUp</span>
-                <span class="method-start">11367 ms</span>
+                <span class="method-start">47984 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">seleniumeasy.test.Tests.ManagePopupWindowTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBtnFollowOnTwitter</span>
+                <span class="method-start">57782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCleanUp</span>
+                <span class="method-start">62329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">63122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFollowAll</span>
+                <span class="method-start">72202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCleanUp</span>
+                <span class="method-start">81407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">assertAll</span>
+                <span class="method-start">82380 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">seleniumeasy.test.Tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">82428 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTablePaginationMenu</span>
+                <span class="method-start">91467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCleanUp</span>
+                <span class="method-start">92370 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.TablePaginationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12969 ms</span>
+                <span class="method-start">93149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTableHeader</span>
-                <span class="method-start">22558 ms</span>
+                <span class="method-start">102492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">22746 ms</span>
+                <span class="method-start">102648 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23541 ms</span>
+                <span class="method-start">103403 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTableContents</span>
-                <span class="method-start">36015 ms</span>
+                <span class="method-start">112497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">38629 ms</span>
+                <span class="method-start">115010 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.tblDataSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39356 ms</span>
+                <span class="method-start">115762 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnUsername</span>
-                <span class="method-start">50715 ms</span>
+                <span class="method-start">125146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">51675 ms</span>
+                <span class="method-start">126106 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">52465 ms</span>
+                <span class="method-start">126915 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnAssignee</span>
-                <span class="method-start">61908 ms</span>
+                <span class="method-start">135678 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">62105 ms</span>
+                <span class="method-start">135872 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">seleniumeasy.test.Tests.BrokenLinkTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">62873 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testBrokenLinks</span>
-                <span class="method-start">72295 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCleanUp</span>
-                <span class="method-start">106586 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">seleniumeasy.test.Tests.tblDataSearchTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">assertAll</span>
-                <span class="method-start">107369 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

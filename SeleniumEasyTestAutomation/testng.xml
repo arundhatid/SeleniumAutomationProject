@@ -7,12 +7,17 @@
   		<listener class-name="seleniumeasy.qa.Util.TestListener"/>
   		<listener class-name="seleniumeasy.qa.Util.ExtentReportListener"/>
   	</listeners>
+  <test name="smoke">
+  	<classes>
+  		 <class name="seleniumeasy.test.Tests.BrokenLinkTest"/>
+     	 <class name="seleniumeasy.test.Tests.ManagePopupWindowTest"/>
+  	</classes>
+  </test>
   <test name="Regression">
     <classes>
       <class name="seleniumeasy.test.Tests.HomePageTest"/>
       <class name="seleniumeasy.test.Tests.TablePaginationTest"/>
       <class name="seleniumeasy.test.Tests.tblDataSearchTest"/>
-      <class name="seleniumeasy.test.Tests.BrokenLinkTest"/>
     </classes>
   </test>
 </suite>

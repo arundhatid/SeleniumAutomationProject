@@ -14,6 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.asserts.SoftAssert;
+
 import seleniumeasy.qa.Util.commonUtil;
 
 /**
@@ -25,7 +27,7 @@ public class Base {
 	protected static WebDriver driver;
 	private static FileInputStream fis;
 	private static Properties prop;
-	
+	protected static SoftAssert sAssert;
 	public Base()
 	{
 		//System.out.println("I am in Base constructor");
@@ -51,7 +53,8 @@ public class Base {
 		
 		//if(driver==null)
 		//{
-			System.out.println("I am inside If:");
+			sAssert = new SoftAssert();
+			
 			if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 			{
 				System.setProperty(prop.getProperty("chromekey"),prop.getProperty("chromepath"));

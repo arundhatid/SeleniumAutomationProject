@@ -30,7 +30,7 @@ import seleniumeasy.qa.Page.tblPaginationPage;
 public class tblDataSearchTest extends Base
 {
 
-	SoftAssert sAssert;
+	//SoftAssert sAssert;
 	tblPaginationPage tObj;
 	tblDataSearchPage obj;
 	
@@ -129,12 +129,13 @@ public class tblDataSearchTest extends Base
 		driver.quit();
 
 	}
+	
 	@AfterTest()
 	public void assertAll()
 	{
 		sAssert.assertAll();
 	}
-	/*@AfterClass
+		/*@AfterClass
 	public void closeConnection()
 	{
 		//postCleanUp();

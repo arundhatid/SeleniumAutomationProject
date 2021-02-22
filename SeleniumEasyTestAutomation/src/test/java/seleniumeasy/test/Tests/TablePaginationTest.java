@@ -17,7 +17,7 @@ import seleniumeasy.qa.Page.tblPaginationPage;
 @Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class TablePaginationTest extends Base 
 {
-	SoftAssert sAssert;
+	//SoftAssert sAssert;
 	HomePage hObj;
 	tblPaginationPage obj;
 	public TablePaginationTest()
@@ -27,7 +27,7 @@ public class TablePaginationTest extends Base
 	public void setUp()
 	{
 		Init();
-		sAssert = new SoftAssert();
+		//sAssert = new SoftAssert();
 		hObj = new HomePage();
 		obj = hObj.clickTablePagination();
 

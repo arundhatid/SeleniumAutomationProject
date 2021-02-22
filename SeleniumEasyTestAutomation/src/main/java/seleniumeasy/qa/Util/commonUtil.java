@@ -28,9 +28,9 @@ public class commonUtil extends Base {
 	public static int iImplicitWait = 30;
 	
 	
-	public void handlePopup()
+	public static int handlePopup(String sParentWindow)
 	{
-		String sParentWindow = driver.getWindowHandle();
+		//String sParentWindow = driver.getWindowHandle();
 		Set<String> lsWnd = driver.getWindowHandles();
 		
 		System.out.println(lsWnd);
@@ -50,6 +50,10 @@ public class commonUtil extends Base {
 			}
 		}
 		driver.switchTo().window(sParentWindow);
+		Set<String> lstWindow = driver.getWindowHandles();
+		System.out.println("AFter Test Number of Windows Open are:" +  lstWindow.size());
+		
+		return lstWindow.size();
 
 	}
 	
