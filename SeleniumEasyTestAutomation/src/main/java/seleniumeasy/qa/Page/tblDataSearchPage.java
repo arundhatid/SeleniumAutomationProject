@@ -33,31 +33,34 @@ public class tblDataSearchPage extends Base{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@Step("Filter results based on username")
-	public String searchElement() 
+	@Step("Filter results based on username which is coming from JSON Test Data File")
+	public String searchElement(String sUserName) 
 	{
 		//((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", txtSearch);
 	    //Thread.sleep(500);
 		
 		
 		
-		
+		System.out.println("sUserName inside the page is: " + sUserName);
 		//txtSearch.click();
 		//WebDriverWait wait = new WebDriverWait(driver, 10);
 		//WebElement element = wait.until(ExpectedConditions.visibilityOf(txtSearch));
 		//WebElement currentElement = driver.switchTo().activeElement();
 		//currentElement.sendKeys("something");
 		txtSearch.click();
-		txtSearch.sendKeys("Smith");
+		WebElement currentElement = driver.switchTo().activeElement();
+		currentElement.sendKeys("something");
+		txtSearch.clear();
+		txtSearch.sendKeys(sUserName);
 		//txtSearch.sendKeys("Smith");
-		Reporter.log("Test Data is : Smith");
-		System.out.println("I came here");
+		Reporter.log("Test Data is : " + sUserName);
+		//System.out.println("I came here");
 		return txtSearch.getAttribute("value");
 		//txtSearch.sendKeys(Keys.RETURN);
 				
 	}
-	@Step("Filter results based on Asignee")
-	public String searchFilterName() //throws InterruptedException
+	@Step("Filter results based on Asignee which is populated through JSON Test data file")
+	public String searchFilterName(String sTestDataNo,String sAssigneeName) //throws InterruptedException
 	{
 		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", btnFilter);
 		//((JavascriptExecutor) driver).executeScript("arguments[0].click();", btnFilter);
@@ -78,9 +81,9 @@ public class tblDataSearchPage extends Base{
 		else
 		{		
 			txtUserName.click();
-			txtUserName.sendKeys("markino");
+			txtUserName.sendKeys(sAssigneeName);
 			txtUserName.sendKeys(Keys.TAB);
-			Reporter.log("TestData is:markino");
+			Reporter.log("TestData is: " + sAssigneeName);
 			//System.out.println("I was here");
 			System.out.println("txtUserName value here is: " + txtUserName.getAttribute("value"));
 			return txtUserName.getAttribute("value");

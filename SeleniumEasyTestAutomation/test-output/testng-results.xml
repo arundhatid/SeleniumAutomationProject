@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
     <line>
       <![CDATA[https://www.seleniumeasy.com/  is valid link]]>
@@ -374,55 +374,261 @@
       <![CDATA[https://www.seleniumeasy.com/selenium-webdriver-tutorials  is valid link]]>
     </line>
     <line>
-      <![CDATA[Test Name is: verifyTablePaginationMenu]]>
+      <![CDATA[The Number of Broken Links are: 0]]>
     </line>
     <line>
-      <![CDATA[TestData is:markino]]>
+      <![CDATA[Test Name is: verifyTablePaginationMenu]]>
     </line>
     <line>
       <![CDATA[Test Data is : Smith]]>
     </line>
+    <line>
+      <![CDATA[Entered Data: ]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 1]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Wireframes]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: John Smith]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 2]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Landing Page]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Mike Trout]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: completed]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 3]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: SEO tags]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Loblab Dan]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: failed qa]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 4]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Bootstrap 3]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Emily John]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 5]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: jQuery library]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Holden Charles]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: deployed]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 6]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Browser Issues]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Jane Doe]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: failed qa]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 7]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Bug fixing]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Kilgore Trout]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test Data is : John]]>
+    </line>
+    <line>
+      <![CDATA[Entered Data: ]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 1]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Wireframes]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: John Smith]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 2]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Landing Page]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Mike Trout]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: completed]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 3]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: SEO tags]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Loblab Dan]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: failed qa]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 4]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Bootstrap 3]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Emily John]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 5]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: jQuery library]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Holden Charles]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: deployed]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 6]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Browser Issues]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Jane Doe]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: failed qa]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 7]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Bug fixing]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: Kilgore Trout]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: in progress]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: 1]]>
+    </line>
+    <line>
+      <![CDATA[TestData is: markino]]>
+    </line>
+    <line>
+      <![CDATA[Entered Data: markino]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: markino]]>
+    </line>
+    <line>
+      <![CDATA[TestData is: larry]]>
+    </line>
+    <line>
+      <![CDATA[Entered Data: larry]]>
+    </line>
+    <line>
+      <![CDATA[The Actual User Name is: larrypt]]>
+    </line>
+    <line>
+      <![CDATA[TestData is: xyz]]>
+    </line>
+    <line>
+      <![CDATA[Entered Data: xyz]]>
+    </line>
+    <line>
+      <![CDATA[Element Not Foundxyz]]>
+    </line>
   </reporter-output>
-  <suite name="AutomationSuit" duration-ms="136730" started-at="2021-02-22T13:15:02Z" finished-at="2021-02-22T13:17:18Z">
+  <suite name="AutomationSuit" duration-ms="206057" started-at="2021-02-27T11:11:28Z" finished-at="2021-02-27T11:14:54Z">
     <groups>
     </groups>
-    <test name="smoke" duration-ms="82422" started-at="2021-02-22T13:15:02Z" finished-at="2021-02-22T13:16:24Z">
+    <test name="smoke" duration-ms="88289" started-at="2021-02-27T11:11:28Z" finished-at="2021-02-27T11:12:56Z">
       <class name="seleniumeasy.test.Tests.ManagePopupWindowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="setUp" is-config="true" duration-ms="8962" started-at="2021-02-22T18:45:51Z" finished-at="2021-02-22T18:46:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="setUp" is-config="true" duration-ms="9215" started-at="2021-02-27T16:42:22Z" finished-at="2021-02-27T16:42:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBtnFollowOnTwitter()[pri:1, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="testBtnFollowOnTwitter" duration-ms="4540" started-at="2021-02-22T18:46:00Z" description="Verify that popup for Twitter window close successfully" finished-at="2021-02-22T18:46:04Z">
+        <test-method status="PASS" signature="testBtnFollowOnTwitter()[pri:1, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="testBtnFollowOnTwitter" duration-ms="4446" started-at="2021-02-27T16:42:31Z" description="Verify that popup for Twitter window close successfully" finished-at="2021-02-27T16:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBtnFollowOnTwitter -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="postCleanUp" is-config="true" duration-ms="793" started-at="2021-02-22T18:46:04Z" finished-at="2021-02-22T18:46:05Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="postCleanUp" is-config="true" duration-ms="838" started-at="2021-02-27T16:42:36Z" finished-at="2021-02-27T16:42:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="setUp" is-config="true" duration-ms="9080" started-at="2021-02-22T18:46:05Z" finished-at="2021-02-22T18:46:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="setUp" is-config="true" duration-ms="9118" started-at="2021-02-27T16:42:37Z" finished-at="2021-02-27T16:42:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyFollowAll()[pri:2, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="verifyFollowAll" duration-ms="9202" started-at="2021-02-22T18:46:14Z" description="Verify that all pop up windows close successfully" finished-at="2021-02-22T18:46:23Z">
+        <test-method status="PASS" signature="verifyFollowAll()[pri:2, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="verifyFollowAll" duration-ms="9374" started-at="2021-02-27T16:42:46Z" description="Verify that all pop up windows close successfully" finished-at="2021-02-27T16:42:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFollowAll -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="postCleanUp" is-config="true" duration-ms="973" started-at="2021-02-22T18:46:23Z" finished-at="2021-02-22T18:46:24Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="postCleanUp" is-config="true" duration-ms="978" started-at="2021-02-27T16:42:55Z" finished-at="2021-02-27T16:42:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
-        <test-method status="PASS" signature="assertAll()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@5f59185e]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-02-22T18:46:24Z" finished-at="2021-02-22T18:46:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertAll -->
       </class> <!-- seleniumeasy.test.Tests.ManagePopupWindowTest -->
       <class name="seleniumeasy.test.Tests.BrokenLinkTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@7c22d4f]" name="setUp" is-config="true" duration-ms="12046" started-at="2021-02-22T18:45:02Z" finished-at="2021-02-22T18:45:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="setUp" is-config="true" duration-ms="12122" started-at="2021-02-27T16:41:28Z" finished-at="2021-02-27T16:41:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBrokenLinks()[pri:1, instance:seleniumeasy.test.Tests.BrokenLinkTest@7c22d4f]" name="testBrokenLinks" duration-ms="35918" started-at="2021-02-22T18:45:14Z" description="Find the number of broken links in website" finished-at="2021-02-22T18:45:50Z">
+        <test-method status="PASS" signature="testBrokenLinks()[pri:1, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="testBrokenLinks" duration-ms="41277" started-at="2021-02-27T16:41:40Z" description="Find the number of broken links in website" finished-at="2021-02-27T16:42:21Z">
           <reporter-output>
             <line>
               <![CDATA[https://www.seleniumeasy.com/  is valid link]]>
@@ -796,86 +1002,396 @@
             <line>
               <![CDATA[https://www.seleniumeasy.com/selenium-webdriver-tutorials  is valid link]]>
             </line>
+            <line>
+              <![CDATA[The Number of Broken Links are: 0]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testBrokenLinks -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@7c22d4f]" name="postCleanUp" is-config="true" duration-ms="830" started-at="2021-02-22T18:45:50Z" finished-at="2021-02-22T18:45:51Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="postCleanUp" is-config="true" duration-ms="815" started-at="2021-02-27T16:42:21Z" finished-at="2021-02-27T16:42:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
       </class> <!-- seleniumeasy.test.Tests.BrokenLinkTest -->
     </test> <!-- smoke -->
-    <test name="Regression" duration-ms="54263" started-at="2021-02-22T13:16:24Z" finished-at="2021-02-22T13:17:18Z">
+    <test name="Regression" duration-ms="117743" started-at="2021-02-27T11:12:56Z" finished-at="2021-02-27T11:14:54Z">
       <class name="seleniumeasy.test.Tests.tblDataSearchTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="setUp" is-config="true" duration-ms="9384" started-at="2021-02-22T18:46:58Z" finished-at="2021-02-22T18:47:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9221" started-at="2021-02-27T16:43:29Z" finished-at="2021-02-27T16:43:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnUsername()[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="verifySearchElementBasedOnUsername" duration-ms="954" started-at="2021-02-22T18:47:07Z" description="Verify Search Based on Username Criteria" finished-at="2021-02-22T18:47:08Z">
-          <reporter-output>
-            <line>
-              <![CDATA[TestData is:markino]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifySearchElementBasedOnUsername -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="assertAllTests" is-config="true" duration-ms="808" started-at="2021-02-22T18:47:08Z" finished-at="2021-02-22T18:47:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="setUp" is-config="true" duration-ms="8763" started-at="2021-02-22T18:47:09Z" finished-at="2021-02-22T18:47:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee()[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="verifySearchElementBasedOnAssignee" duration-ms="192" started-at="2021-02-22T18:47:17Z" description="Verify Search Based on Asignee Criteria" finished-at="2021-02-22T18:47:18Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnUsername" duration-ms="1089" started-at="2021-02-27T16:43:38Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:43:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Test Data is : Smith]]>
             </line>
+            <line>
+              <![CDATA[Entered Data: ]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 1]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Wireframes]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: John Smith]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 2]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Landing Page]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Mike Trout]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: completed]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 3]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: SEO tags]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Loblab Dan]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: failed qa]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 4]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Bootstrap 3]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Emily John]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 5]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: jQuery library]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Holden Charles]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: deployed]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 6]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Browser Issues]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Jane Doe]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: failed qa]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 7]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Bug fixing]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Kilgore Trout]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 1]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- verifySearchElementBasedOnAssignee -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4a3e3e8b]" name="assertAllTests" is-config="true" duration-ms="817" started-at="2021-02-22T18:47:18Z" finished-at="2021-02-22T18:47:18Z">
+        </test-method> <!-- verifySearchElementBasedOnUsername -->
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="762" started-at="2021-02-27T16:43:39Z" finished-at="2021-02-27T16:43:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
-      <class name="seleniumeasy.test.Tests.TablePaginationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="setUp" is-config="true" duration-ms="9343" started-at="2021-02-22T18:46:35Z" finished-at="2021-02-22T18:46:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9392" started-at="2021-02-27T16:43:40Z" finished-at="2021-02-27T16:43:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTableHeader()[pri:1, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="verifyTableHeader" duration-ms="154" started-at="2021-02-22T18:46:44Z" description="Verify Table Header" finished-at="2021-02-22T18:46:44Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnUsername" duration-ms="1035" started-at="2021-02-27T16:43:49Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:43:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data is : John]]>
+            </line>
+            <line>
+              <![CDATA[Entered Data: ]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 1]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Wireframes]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: John Smith]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 2]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Landing Page]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Mike Trout]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: completed]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 3]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: SEO tags]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Loblab Dan]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: failed qa]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 4]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Bootstrap 3]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Emily John]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 5]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: jQuery library]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Holden Charles]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: deployed]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 6]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Browser Issues]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Jane Doe]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: failed qa]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 7]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Bug fixing]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: Kilgore Trout]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: in progress]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchElementBasedOnUsername -->
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="776" started-at="2021-02-27T16:43:51Z" finished-at="2021-02-27T16:43:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAllTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="8846" started-at="2021-02-27T16:43:51Z" finished-at="2021-02-27T16:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="965" started-at="2021-02-27T16:44:00Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[markino]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestData is: markino]]>
+            </line>
+            <line>
+              <![CDATA[Entered Data: markino]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: markino]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchElementBasedOnAssignee -->
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="781" started-at="2021-02-27T16:44:01Z" finished-at="2021-02-27T16:44:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAllTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9432" started-at="2021-02-27T16:44:02Z" finished-at="2021-02-27T16:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="922" started-at="2021-02-27T16:44:11Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[larry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestData is: larry]]>
+            </line>
+            <line>
+              <![CDATA[Entered Data: larry]]>
+            </line>
+            <line>
+              <![CDATA[The Actual User Name is: larrypt]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchElementBasedOnAssignee -->
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="796" started-at="2021-02-27T16:44:12Z" finished-at="2021-02-27T16:44:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAllTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9231" started-at="2021-02-27T16:44:13Z" finished-at="2021-02-27T16:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="30919" started-at="2021-02-27T16:44:22Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestData is: xyz]]>
+            </line>
+            <line>
+              <![CDATA[Entered Data: xyz]]>
+            </line>
+            <line>
+              <![CDATA[Element Not Foundxyz]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchElementBasedOnAssignee -->
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="771" started-at="2021-02-27T16:44:53Z" finished-at="2021-02-27T16:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAllTests -->
+        <test-method status="PASS" signature="assertAll()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-02-27T16:44:54Z" finished-at="2021-02-27T16:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAll -->
+      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
+      <class name="seleniumeasy.test.Tests.TablePaginationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="setUp" is-config="true" duration-ms="9638" started-at="2021-02-27T16:43:06Z" finished-at="2021-02-27T16:43:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyTableHeader()[pri:1, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="verifyTableHeader" duration-ms="163" started-at="2021-02-27T16:43:16Z" description="Verify Table Header" finished-at="2021-02-27T16:43:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTableHeader -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="assertAllTests" is-config="true" duration-ms="755" started-at="2021-02-22T18:46:44Z" finished-at="2021-02-22T18:46:45Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="assertAllTests" is-config="true" duration-ms="765" started-at="2021-02-27T16:43:16Z" finished-at="2021-02-27T16:43:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="setUp" is-config="true" duration-ms="9094" started-at="2021-02-22T18:46:45Z" finished-at="2021-02-22T18:46:54Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="setUp" is-config="true" duration-ms="8900" started-at="2021-02-27T16:43:17Z" finished-at="2021-02-27T16:43:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTableContents()[pri:2, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="verifyTableContents" duration-ms="2511" started-at="2021-02-22T18:46:54Z" description="Verify Table Contents" finished-at="2021-02-22T18:46:57Z">
+        <test-method status="PASS" signature="verifyTableContents()[pri:2, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="verifyTableContents" duration-ms="2667" started-at="2021-02-27T16:43:26Z" description="Verify Table Contents" finished-at="2021-02-27T16:43:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTableContents -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@7876d598]" name="assertAllTests" is-config="true" duration-ms="751" started-at="2021-02-22T18:46:57Z" finished-at="2021-02-22T18:46:58Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="assertAllTests" is-config="true" duration-ms="776" started-at="2021-02-27T16:43:28Z" finished-at="2021-02-27T16:43:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
       </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
       <class name="seleniumeasy.test.Tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@15a902e7]" name="setUp" is-config="true" duration-ms="9039" started-at="2021-02-22T18:46:24Z" finished-at="2021-02-22T18:46:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="setUp" is-config="true" duration-ms="8599" started-at="2021-02-27T16:42:56Z" finished-at="2021-02-27T16:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTablePaginationMenu()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@15a902e7]" name="verifyTablePaginationMenu" duration-ms="901" started-at="2021-02-22T18:46:33Z" description="Verify Table Pagination Menu Opens successfully" finished-at="2021-02-22T18:46:34Z">
+        <test-method status="PASS" signature="verifyTablePaginationMenu()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="verifyTablePaginationMenu" duration-ms="495" started-at="2021-02-27T16:43:05Z" description="Verify Table Pagination Menu Opens successfully" finished-at="2021-02-27T16:43:05Z">
           <reporter-output>
             <line>
               <![CDATA[Test Name is: verifyTablePaginationMenu]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyTablePaginationMenu -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@15a902e7]" name="postCleanUp" is-config="true" duration-ms="779" started-at="2021-02-22T18:46:34Z" finished-at="2021-02-22T18:46:35Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="postCleanUp" is-config="true" duration-ms="748" started-at="2021-02-27T16:43:05Z" finished-at="2021-02-27T16:43:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->

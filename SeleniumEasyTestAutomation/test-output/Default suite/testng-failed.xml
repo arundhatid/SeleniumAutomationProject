@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumeasy.test.Tests.ManagePopupWindowTest">
+      <class name="seleniumeasy.test.Tests.tblDataSearchTest">
         <methods>
-          <include name="testBtnFollowOnTwitter"/>
-          <include name="postCleanUp"/>
+          <include name="verifySearchElementBasedOnAssignee" invocation-numbers="2"/>
           <include name="setUp"/>
+          <include name="assertAllTests"/>
+          <include name="assertAll"/>
         </methods>
-      </class> <!-- seleniumeasy.test.Tests.ManagePopupWindowTest -->
+      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

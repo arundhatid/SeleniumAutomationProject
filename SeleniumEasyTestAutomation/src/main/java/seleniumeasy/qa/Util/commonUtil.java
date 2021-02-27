@@ -1,7 +1,10 @@
 package seleniumeasy.qa.Util;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -10,6 +13,10 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -17,7 +24,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
 
+import io.qameta.allure.Allure;
 import seleniumeasy.qa.Base.Base;
 
 public class commonUtil extends Base {
@@ -86,6 +95,7 @@ public class commonUtil extends Base {
 		List <WebElement> sLinkName = driver.findElements(By.tagName("a"));
 		System.out.println("The Number of hyperlinks are : " + sLinkName.size());
 		Iterator <WebElement> itr = sLinkName.iterator();
+		Allure.step("Following are valid links in the website");
 		while(itr.hasNext())
 		{
 			
@@ -112,10 +122,12 @@ public class commonUtil extends Base {
 				{
 					System.out.println(sURL + "  is valid link");
 					Reporter.log(sURL + "  is valid link");
+					Allure.step(sURL);
 				}
 			}
 			catch(MalformedURLException e)
 			{
+				
 				e.printStackTrace();
 				Reporter.log("MalformedURLException: " + sURL);
 				
@@ -131,8 +143,78 @@ public class commonUtil extends Base {
 			
 		}
 		System.out.println("The Number of Broken Links are: " + iCount);
+		Allure.step("The Number of Broken Links are: " + iCount);
+		Reporter.log("The Number of Broken Links are: " + iCount);
+	}
+	
+	@DataProvider(name="readDataFromJason")
+	public static Object[][] readJasonData(Method method)
+	{
+		
+		JSONParser jParser = new JSONParser();
+		FileReader reader = null;
+		Object obj = null;
+		try {
+			reader = new FileReader("D:\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\TestData\\Data_TableDataSearch.json");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			obj = jParser.parse(reader);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("The method name is: " + method.getName());
+		String sKey = null;
+		String sEachKey=null;
+		if(method.getName().equals("verifySearchElementBasedOnUsername"))
+		{
+			sKey="searchAsignee";
+			sEachKey="asignee";
+		}	
+		if(method.getName().equals("verifySearchElementBasedOnAssignee"))
+		{
+			sKey="searchUsers";
+			sEachKey="username";
+		}
+		JSONObject JSONData = (JSONObject)obj;
+		
+		JSONArray JSONDataArray = (JSONArray)JSONData.get(sKey);
+		Object data[][] = new Object[JSONDataArray.size()][2];
+		int j=0;
+		for(int i=0;i<JSONDataArray.size();i++)			
+		{
+				j=0;
+				JSONObject jData = (JSONObject)JSONDataArray.get(i);
+				String sTestDataNo = (String) jData.get("TestDataNo");
+				String sTestData = (String) jData.get(sEachKey);
+				System.out.println("sTestDataNo is:" + sTestDataNo);
+				System.out.println("sUserName is:" + sTestData);
+				data[i][0] = (Object)sTestDataNo;
+				data[i][1] = (Object)sTestData;
+				System.out.println("data[" + i + "][0] is:" + data[i][j]);
+				System.out.println("data[" + i + "][1] is:" + data[i][j+1]);
+			
+		}
+		/*obj=null;
+		JSONData=null;
+		JSONDataArray=null;
+		try {
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		return data;		
 		
 	}
+
 }
 			
 			

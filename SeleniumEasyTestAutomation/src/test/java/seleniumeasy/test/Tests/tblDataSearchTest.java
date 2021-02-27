@@ -1,16 +1,13 @@
 package seleniumeasy.test.Tests;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 //import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -21,12 +18,13 @@ import io.qameta.allure.SeverityLevel;
 import seleniumeasy.qa.Base.Base;
 import seleniumeasy.qa.Page.tblDataSearchPage;
 import seleniumeasy.qa.Page.tblPaginationPage;
+import seleniumeasy.qa.Util.commonUtil;
 
 //@Listeners(seleniumeasy.qa.Util.TestListener.class)
 //Comment to push data 
 //one more comment added
 
-@Listeners(seleniumeasy.qa.Util.TestListener.class)
+//@Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class tblDataSearchTest extends Base
 {
 
@@ -47,83 +45,83 @@ public class tblDataSearchTest extends Base
 		obj = tObj.clickTableDataSearchMenu();		
 
 	}
-	@Test(priority='b',description="Verify Search Based on Asignee Criteria")
+	@Test(priority='b',description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file",dataProvider = "readDataFromJason", dataProviderClass=commonUtil.class)
 	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Description: Search Test Based On Asignee")
-	public void verifySearchElementBasedOnAssignee()
+	@Description("Test Description: Search Test Based On Asignee which is populated through JSON Test data file")
+	public void verifySearchElementBasedOnAssignee(String sTestDataNo,String sAsigneeName)
 	{
+		System.out.println("sData1 is : " + sTestDataNo + "sUserName: "+ sAsigneeName);
 		String sEnteredText;
-		sEnteredText = obj.searchElement();
+		sEnteredText = obj.searchFilterName(sTestDataNo,sAsigneeName);
 		
 		System.out.println("sEnteredText is : " + sEnteredText);
-		System.out.println("The String is this: " + "//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]");
+		Reporter.log("Entered Data: " + sEnteredText);
+		//System.out.println("The String is this: " + "//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]");
 		if((sEnteredText!=null))
 		{
-			String sAssignee = driver.findElement(By.xpath("//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]")).getText();
-			sAssert.assertEquals(sAssignee, sEnteredText);
+			List<WebElement> wAssignee = driver.findElements(By.xpath("//table/tbody/tr/td[contains(text(),'" + sEnteredText +  "')]"));
+			if(!wAssignee.isEmpty())
+			{
+				if(wAssignee.size()>1)
+				{
+					for(WebElement element:wAssignee)
+					{
+						System.out.println("The Actual User Name is: "+ element.getText());
+						Reporter.log("The Actual User Name is: "+ element.getText());
+						sAssert.assertTrue(element.getText().contains(sEnteredText));
+					}
+				}
+				else
+					Reporter.log("The Actual User Name is: "+ wAssignee.get(0).getText());
+					sAssert.assertTrue(wAssignee.get(0).getText().contains(sEnteredText));
+			}
+			else
+				Reporter.log("Element Not Found"+ sEnteredText);
 		}
 		//sAssert.assertAll();
+		//Object[][] data = readJasonData();
 	}
-	@Test(priority='a',description="Verify Search Based on Username Criteria")
+	@Test(priority='a',description="Verify Search Based on Username Criteria which is populated through JSON Test data file",dataProvider="readDataFromJason",dataProviderClass=commonUtil.class)
 	@Severity(SeverityLevel.CRITICAL)
-	@Description("Test Description: Search Test Based On Username")
-	public void verifySearchElementBasedOnUsername()
+	@Description("Test Description: JSON Data Driven Test Based On Username")
+	public void verifySearchElementBasedOnUsername(String sData1, String sUserName)
 	{		
-		String sEnteredText = obj.searchFilterName();
-		System.out.println("sEnteredText is : " + sEnteredText);
-		if((sEnteredText!=null))
+		System.out.println("sData1 is : " + sData1 + "sUserName: "+ sUserName);
+		
+		String sEnterUserName = obj.searchElement(sUserName);
+		System.out.println("sEnteredText is : " + sEnterUserName);
+		Reporter.log("Entered Data: " + sEnterUserName);
+		if((sEnterUserName!=null))
 		{
-			String sUserName = driver.findElement(By.xpath("//table[@class='table']/tbody/tr/td[text()='" + sEnteredText + "']")).getText();
-			sAssert.assertEquals(sUserName, sEnteredText);
+			List<WebElement> wActualUserName = driver.findElements(By.xpath("//table[@id='task-table']/tbody/tr/td[contains(text(),'" + sEnterUserName + "')]"));
+			//sAssert.assertEquals(sActualUserName, sEnterUserName);
+			if(wActualUserName.size()>1)
+			{
+				for(WebElement element:wActualUserName)
+				{
+					System.out.println("The Actual User Name is: "+ element.getText());
+					Reporter.log("The Actual User Name is: "+ element.getText());
+					sAssert.assertTrue(element.getText().contains(sEnterUserName));
+
+					
+				}
+			}
+			else
+				System.out.println("The Actual User Name is: "+ wActualUserName.get(0).getText());
+				Reporter.log("The Actual User Name is: "+ wActualUserName.get(0).getText());
+				sAssert.assertTrue(wActualUserName.get(0).getText().contains(sEnterUserName), "Assert True");
 		}
-		readJSonFile();
+		
 	}
 	
-	public void readJSonFile()
-	{
-		FileReader fr = null;
-		JSONObject objJson = null;
-		//create JSONParser object
-		JSONParser jSonParser=new JSONParser();
-		try {
-			//create testdata file object
-			fr = new FileReader("D:\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\TestData\\Data_TableDataSearch.json");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			//parse testdata into object
-			objJson = (JSONObject) jSonParser.parse(fr);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
+	
+	
+	//@DataProvider
 		
-		//
-		//JSONArray jArray =  (JSONArray) objJson.get(username);
-		Object[][] data = new Object[objJson.keySet().size()][0];
-		
-		System.out.println("JSON Object Size is: " + objJson.keySet().size());
-		//for(Set<Keys> key= objJson.keySet();key.hasNext())
-		for(int i=0;i<objJson.keySet().size();i++)
-		{
-			//data[i][0] = objJson.
-			
-		}
-		System.out.println("Jason Array List is as followes: " + data);
-		
-		
-	}
 	@AfterMethod
 	public void assertAllTests()
 	{
-		System.out.println("I am in TableDataSerch AfterClass");
-		
-		//postCleanUp("TableDataSearch",driver);
 		
 		driver.close();
 		driver.quit();
