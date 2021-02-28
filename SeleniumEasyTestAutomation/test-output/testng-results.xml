@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="20" passed="20">
   <reporter-output>
     <line>
       <![CDATA[https://www.seleniumeasy.com/  is valid link]]>
@@ -593,42 +593,42 @@
       <![CDATA[Element Not Foundxyz]]>
     </line>
   </reporter-output>
-  <suite name="AutomationSuit" duration-ms="206057" started-at="2021-02-27T11:11:28Z" finished-at="2021-02-27T11:14:54Z">
+  <suite name="AutomationSuit" duration-ms="318839" started-at="2021-02-28T16:39:37Z" finished-at="2021-02-28T16:44:56Z">
     <groups>
     </groups>
-    <test name="smoke" duration-ms="88289" started-at="2021-02-27T11:11:28Z" finished-at="2021-02-27T11:12:56Z">
+    <test name="smoke" duration-ms="91012" started-at="2021-02-28T16:39:37Z" finished-at="2021-02-28T16:41:08Z">
       <class name="seleniumeasy.test.Tests.ManagePopupWindowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="setUp" is-config="true" duration-ms="9215" started-at="2021-02-27T16:42:22Z" finished-at="2021-02-27T16:42:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="setUp" is-config="true" duration-ms="9771" started-at="2021-02-28T22:10:33Z" finished-at="2021-02-28T22:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBtnFollowOnTwitter()[pri:1, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="testBtnFollowOnTwitter" duration-ms="4446" started-at="2021-02-27T16:42:31Z" description="Verify that popup for Twitter window close successfully" finished-at="2021-02-27T16:42:36Z">
+        <test-method status="PASS" signature="testBtnFollowOnTwitter()[pri:1, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="testBtnFollowOnTwitter" duration-ms="4445" started-at="2021-02-28T22:10:42Z" description="Verify that popup for Twitter window close successfully" finished-at="2021-02-28T22:10:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBtnFollowOnTwitter -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="postCleanUp" is-config="true" duration-ms="838" started-at="2021-02-27T16:42:36Z" finished-at="2021-02-27T16:42:37Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="postCleanUp" is-config="true" duration-ms="787" started-at="2021-02-28T22:10:47Z" finished-at="2021-02-28T22:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="setUp" is-config="true" duration-ms="9118" started-at="2021-02-27T16:42:37Z" finished-at="2021-02-27T16:42:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="setUp" is-config="true" duration-ms="9958" started-at="2021-02-28T22:10:48Z" finished-at="2021-02-28T22:10:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyFollowAll()[pri:2, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="verifyFollowAll" duration-ms="9374" started-at="2021-02-27T16:42:46Z" description="Verify that all pop up windows close successfully" finished-at="2021-02-27T16:42:55Z">
+        <test-method status="PASS" signature="verifyFollowAll()[pri:2, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="verifyFollowAll" duration-ms="9367" started-at="2021-02-28T22:10:58Z" description="Verify that all pop up windows close successfully" finished-at="2021-02-28T22:11:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFollowAll -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@a7e2d9d]" name="postCleanUp" is-config="true" duration-ms="978" started-at="2021-02-27T16:42:55Z" finished-at="2021-02-27T16:42:56Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.ManagePopupWindowTest@319dead1]" name="postCleanUp" is-config="true" duration-ms="953" started-at="2021-02-28T22:11:07Z" finished-at="2021-02-28T22:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
       </class> <!-- seleniumeasy.test.Tests.ManagePopupWindowTest -->
       <class name="seleniumeasy.test.Tests.BrokenLinkTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="setUp" is-config="true" duration-ms="12122" started-at="2021-02-27T16:41:28Z" finished-at="2021-02-27T16:41:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@2baa8d82]" name="setUp" is-config="true" duration-ms="10161" started-at="2021-02-28T22:09:37Z" finished-at="2021-02-28T22:09:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testBrokenLinks()[pri:1, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="testBrokenLinks" duration-ms="41277" started-at="2021-02-27T16:41:40Z" description="Find the number of broken links in website" finished-at="2021-02-27T16:42:21Z">
+        <test-method status="PASS" signature="testBrokenLinks()[pri:1, instance:seleniumeasy.test.Tests.BrokenLinkTest@2baa8d82]" name="testBrokenLinks" duration-ms="44659" started-at="2021-02-28T22:09:47Z" description="Find the number of broken links in website" finished-at="2021-02-28T22:10:32Z">
           <reporter-output>
             <line>
               <![CDATA[https://www.seleniumeasy.com/  is valid link]]>
@@ -1007,19 +1007,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- testBrokenLinks -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@791cbf87]" name="postCleanUp" is-config="true" duration-ms="815" started-at="2021-02-27T16:42:21Z" finished-at="2021-02-27T16:42:22Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.BrokenLinkTest@2baa8d82]" name="postCleanUp" is-config="true" duration-ms="836" started-at="2021-02-28T22:10:32Z" finished-at="2021-02-28T22:10:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
       </class> <!-- seleniumeasy.test.Tests.BrokenLinkTest -->
     </test> <!-- smoke -->
-    <test name="Regression" duration-ms="117743" started-at="2021-02-27T11:12:56Z" finished-at="2021-02-27T11:14:54Z">
+    <test name="Regression" duration-ms="227799" started-at="2021-02-28T16:41:08Z" finished-at="2021-02-28T16:44:56Z">
       <class name="seleniumeasy.test.Tests.tblDataSearchTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9221" started-at="2021-02-27T16:43:29Z" finished-at="2021-02-27T16:43:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="setUp" is-config="true" duration-ms="9348" started-at="2021-02-28T22:11:42Z" finished-at="2021-02-28T22:11:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnUsername" duration-ms="1089" started-at="2021-02-27T16:43:38Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:43:39Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="verifySearchElementBasedOnUsername" duration-ms="1068" started-at="2021-02-28T22:11:51Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-28T22:11:52Z">
           <params>
             <param index="0">
               <value>
@@ -1128,15 +1128,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchElementBasedOnUsername -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="762" started-at="2021-02-27T16:43:39Z" finished-at="2021-02-27T16:43:40Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="assertAllTests" is-config="true" duration-ms="779" started-at="2021-02-28T22:11:52Z" finished-at="2021-02-28T22:11:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9392" started-at="2021-02-27T16:43:40Z" finished-at="2021-02-27T16:43:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="setUp" is-config="true" duration-ms="9740" started-at="2021-02-28T22:11:53Z" finished-at="2021-02-28T22:12:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnUsername" duration-ms="1035" started-at="2021-02-27T16:43:49Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:43:51Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnUsername(java.lang.String, java.lang.String)[pri:97, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="verifySearchElementBasedOnUsername" duration-ms="1065" started-at="2021-02-28T22:12:03Z" description="Verify Search Based on Username Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-28T22:12:04Z">
           <params>
             <param index="0">
               <value>
@@ -1245,15 +1245,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchElementBasedOnUsername -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="776" started-at="2021-02-27T16:43:51Z" finished-at="2021-02-27T16:43:51Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="assertAllTests" is-config="true" duration-ms="785" started-at="2021-02-28T22:12:04Z" finished-at="2021-02-28T22:12:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="8846" started-at="2021-02-27T16:43:51Z" finished-at="2021-02-27T16:44:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="setUp" is-config="true" duration-ms="9146" started-at="2021-02-28T22:12:05Z" finished-at="2021-02-28T22:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="965" started-at="2021-02-27T16:44:00Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:01Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="verifySearchElementBasedOnAssignee" duration-ms="938" started-at="2021-02-28T22:12:14Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-28T22:12:15Z">
           <params>
             <param index="0">
               <value>
@@ -1278,15 +1278,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchElementBasedOnAssignee -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="781" started-at="2021-02-27T16:44:01Z" finished-at="2021-02-27T16:44:02Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="assertAllTests" is-config="true" duration-ms="763" started-at="2021-02-28T22:12:15Z" finished-at="2021-02-28T22:12:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9432" started-at="2021-02-27T16:44:02Z" finished-at="2021-02-27T16:44:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="setUp" is-config="true" duration-ms="9752" started-at="2021-02-28T22:12:16Z" finished-at="2021-02-28T22:12:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="922" started-at="2021-02-27T16:44:11Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:12Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="verifySearchElementBasedOnAssignee" duration-ms="961" started-at="2021-02-28T22:12:25Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-28T22:12:26Z">
           <params>
             <param index="0">
               <value>
@@ -1311,15 +1311,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchElementBasedOnAssignee -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="796" started-at="2021-02-27T16:44:12Z" finished-at="2021-02-27T16:44:13Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="assertAllTests" is-config="true" duration-ms="761" started-at="2021-02-28T22:12:26Z" finished-at="2021-02-28T22:12:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="setUp" is-config="true" duration-ms="9231" started-at="2021-02-27T16:44:13Z" finished-at="2021-02-27T16:44:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="setUp" is-config="true" duration-ms="11116" started-at="2021-02-28T22:12:27Z" finished-at="2021-02-28T22:12:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="verifySearchElementBasedOnAssignee" duration-ms="30919" started-at="2021-02-27T16:44:22Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-27T16:44:53Z">
+        <test-method status="PASS" signature="verifySearchElementBasedOnAssignee(java.lang.String, java.lang.String)[pri:98, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="verifySearchElementBasedOnAssignee" duration-ms="30913" started-at="2021-02-28T22:12:38Z" description="Verify Search Based on Asignee Criteria which is populated through JSON Test data file" data-provider="readDataFromJason" finished-at="2021-02-28T22:13:09Z">
           <params>
             <param index="0">
               <value>
@@ -1344,58 +1344,726 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchElementBasedOnAssignee -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAllTests" is-config="true" duration-ms="771" started-at="2021-02-27T16:44:53Z" finished-at="2021-02-27T16:44:54Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@4816c290]" name="assertAllTests" is-config="true" duration-ms="767" started-at="2021-02-28T22:13:09Z" finished-at="2021-02-28T22:13:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="assertAll()[pri:0, instance:seleniumeasy.test.Tests.tblDataSearchTest@552518c3]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-02-27T16:44:54Z" finished-at="2021-02-27T16:44:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertAll -->
       </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
       <class name="seleniumeasy.test.Tests.TablePaginationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="setUp" is-config="true" duration-ms="9638" started-at="2021-02-27T16:43:06Z" finished-at="2021-02-27T16:43:16Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="setUp" is-config="true" duration-ms="9367" started-at="2021-02-28T22:11:18Z" finished-at="2021-02-28T22:11:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTableHeader()[pri:1, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="verifyTableHeader" duration-ms="163" started-at="2021-02-27T16:43:16Z" description="Verify Table Header" finished-at="2021-02-27T16:43:16Z">
+        <test-method status="PASS" signature="verifyTableHeader()[pri:1, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="verifyTableHeader" duration-ms="180" started-at="2021-02-28T22:11:28Z" description="Verify Table Header" finished-at="2021-02-28T22:11:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTableHeader -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="assertAllTests" is-config="true" duration-ms="765" started-at="2021-02-27T16:43:16Z" finished-at="2021-02-27T16:43:17Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="assertAllTests" is-config="true" duration-ms="1209" started-at="2021-02-28T22:11:28Z" finished-at="2021-02-28T22:11:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="setUp" is-config="true" duration-ms="8900" started-at="2021-02-27T16:43:17Z" finished-at="2021-02-27T16:43:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="setUp" is-config="true" duration-ms="8917" started-at="2021-02-28T22:11:29Z" finished-at="2021-02-28T22:11:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTableContents()[pri:2, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="verifyTableContents" duration-ms="2667" started-at="2021-02-27T16:43:26Z" description="Verify Table Contents" finished-at="2021-02-27T16:43:28Z">
+        <test-method status="PASS" signature="verifyTableContents()[pri:2, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="verifyTableContents" duration-ms="2909" started-at="2021-02-28T22:11:38Z" description="Verify Table Contents" finished-at="2021-02-28T22:11:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTableContents -->
-        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@25f9407e]" name="assertAllTests" is-config="true" duration-ms="776" started-at="2021-02-27T16:43:28Z" finished-at="2021-02-27T16:43:29Z">
+        <test-method status="PASS" signature="assertAllTests()[pri:0, instance:seleniumeasy.test.Tests.TablePaginationTest@29876704]" name="assertAllTests" is-config="true" duration-ms="1105" started-at="2021-02-28T22:11:41Z" finished-at="2021-02-28T22:11:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertAllTests -->
       </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
       <class name="seleniumeasy.test.Tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="setUp" is-config="true" duration-ms="8599" started-at="2021-02-27T16:42:56Z" finished-at="2021-02-27T16:43:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@455351c4]" name="setUp" is-config="true" duration-ms="8951" started-at="2021-02-28T22:11:08Z" finished-at="2021-02-28T22:11:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyTablePaginationMenu()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="verifyTablePaginationMenu" duration-ms="495" started-at="2021-02-27T16:43:05Z" description="Verify Table Pagination Menu Opens successfully" finished-at="2021-02-27T16:43:05Z">
+        <test-method status="PASS" signature="verifyTablePaginationMenu()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@455351c4]" name="verifyTablePaginationMenu" duration-ms="478" started-at="2021-02-28T22:11:17Z" description="Verify Table Pagination Menu Opens successfully" finished-at="2021-02-28T22:11:17Z">
           <reporter-output>
             <line>
               <![CDATA[Test Name is: verifyTablePaginationMenu]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyTablePaginationMenu -->
-        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@21ec5d87]" name="postCleanUp" is-config="true" duration-ms="748" started-at="2021-02-27T16:43:05Z" finished-at="2021-02-27T16:43:06Z">
+        <test-method status="PASS" signature="postCleanUp()[pri:0, instance:seleniumeasy.test.Tests.HomePageTest@455351c4]" name="postCleanUp" is-config="true" duration-ms="776" started-at="2021-02-28T22:11:17Z" finished-at="2021-02-28T22:11:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCleanUp -->
       </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
+      <class name="seleniumeasy.test.Tests.InputFormValidationTest">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="10543" started-at="2021-02-28T22:13:11Z" finished-at="2021-02-28T22:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1302" started-at="2021-02-28T22:13:22Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:13:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[abcd@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.23456789E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="779" started-at="2021-02-28T22:13:23Z" finished-at="2021-02-28T22:13:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="9694" started-at="2021-02-28T22:13:24Z" finished-at="2021-02-28T22:13:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1240" started-at="2021-02-28T22:13:33Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:13:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mary]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Joe]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qayg@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6.78866666E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="790" started-at="2021-02-28T22:13:35Z" finished-at="2021-02-28T22:13:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="8857" started-at="2021-02-28T22:13:35Z" finished-at="2021-02-28T22:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1264" started-at="2021-02-28T22:13:44Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:13:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ssss@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4.24234324E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="768" started-at="2021-02-28T22:13:45Z" finished-at="2021-02-28T22:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="9208" started-at="2021-02-28T22:13:46Z" finished-at="2021-02-28T22:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1240" started-at="2021-02-28T22:13:55Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:13:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jane]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tttt@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6.82142344E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="845" started-at="2021-02-28T22:13:57Z" finished-at="2021-02-28T22:13:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="8907" started-at="2021-02-28T22:13:58Z" finished-at="2021-02-28T22:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1260" started-at="2021-02-28T22:14:06Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:14:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Margaret]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thatcher]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dummy@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.24343244E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="778" started-at="2021-02-28T22:14:08Z" finished-at="2021-02-28T22:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="10327" started-at="2021-02-28T22:14:08Z" finished-at="2021-02-28T22:14:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1713" started-at="2021-02-28T22:14:19Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:14:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Barack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Omaba]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[jjjj@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7.666866666E9]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="1180" started-at="2021-02-28T22:14:21Z" finished-at="2021-02-28T22:14:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="8981" started-at="2021-02-28T22:14:22Z" finished-at="2021-02-28T22:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1236" started-at="2021-02-28T22:14:31Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:14:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hillary]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Clinton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[zzzz@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6.788686868E9]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="1167" started-at="2021-02-28T22:14:32Z" finished-at="2021-02-28T22:14:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="8850" started-at="2021-02-28T22:14:33Z" finished-at="2021-02-28T22:14:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1475" started-at="2021-02-28T22:14:42Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:14:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Thomas]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cccc@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2.13243242E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="820" started-at="2021-02-28T22:14:43Z" finished-at="2021-02-28T22:14:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="setUP" is-config="true" duration-ms="9247" started-at="2021-02-28T22:14:44Z" finished-at="2021-02-28T22:14:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="validateInputForm(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="validateInputForm" duration-ms="1403" started-at="2021-02-28T22:14:53Z" description="Data driven test using excel to insert records in the system" data-provider="getInputData" finished-at="2021-02-28T22:14:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InputForm_TestCase1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nitor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Manhatten]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[vvvv@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4.32423423E8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Dummy Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Georgia]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[30338.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[nnm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputForm -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="tearDown" is-config="true" duration-ms="878" started-at="2021-02-28T22:14:55Z" finished-at="2021-02-28T22:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="assertAll()[pri:0, instance:seleniumeasy.test.Tests.InputFormValidationTest@4940809c]" name="assertAll" is-config="true" duration-ms="0" started-at="2021-02-28T22:14:56Z" finished-at="2021-02-28T22:14:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertAll -->
+      </class> <!-- seleniumeasy.test.Tests.InputFormValidationTest -->
     </test> <!-- Regression -->
   </suite> <!-- AutomationSuit -->
 </testng-results>

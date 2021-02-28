@@ -14,7 +14,14 @@ public class managePopupWindowPage extends Base{
 	
 	@FindBy(linkText="Follow On Twitter")
 	WebElement btnFollowOnTwitter;
+
+	@FindBy(linkText="Input Forms")
+	WebElement mnuInputForms;
 	
+	@FindBy(linkText="Input Form Submit")
+	WebElement mnuInputFormSubmit;
+	
+
 	public managePopupWindowPage()
 	{
 		PageFactory.initElements(driver,this);
@@ -30,5 +37,13 @@ public class managePopupWindowPage extends Base{
 	public void verifyBtnFollowOnTwitter()
 	{
 		btnFollowOnTwitter.click();
+	}
+	
+	public InputFormValidationPage clickInputFormSubmitMenu()
+	{
+		mnuInputForms.click();
+		mnuInputFormSubmit.click();
+		return new InputFormValidationPage();
+		
 	}
 }

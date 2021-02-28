@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumeasy.test.Tests.tblDataSearchTest">
+      <class name="seleniumeasy.test.Tests.InputFormValidationTest">
         <methods>
-          <include name="verifySearchElementBasedOnAssignee" invocation-numbers="2"/>
-          <include name="setUp"/>
-          <include name="assertAllTests"/>
-          <include name="assertAll"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="validateInputForm" invocation-numbers="0"/>
         </methods>
-      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
+      </class> <!-- seleniumeasy.test.Tests.InputFormValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

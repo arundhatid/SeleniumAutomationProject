@@ -128,11 +128,7 @@ public class tblDataSearchTest extends Base
 
 	}
 	
-	@AfterTest()
-	public void assertAll()
-	{
-		sAssert.assertAll();
-	}
+	
 		/*@AfterClass
 	public void closeConnection()
 	{
