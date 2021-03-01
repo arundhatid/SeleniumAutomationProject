@@ -9,6 +9,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -41,7 +42,7 @@ public class HomePageTest extends Base
 		Reporter.log("Test Name is: verifyTablePaginationMenu");
 		tblObj = obj.clickTablePagination();
 		WebElement sPageTitle = driver.findElement(By.tagName("h2"));
-		
+		Allure.step("Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
 		sAssert.assertEquals("Table with Pagination Examples", sPageTitle.getText());
 		//commonUtil.takeScreenShot(driver, "firstScreenShot");
 		

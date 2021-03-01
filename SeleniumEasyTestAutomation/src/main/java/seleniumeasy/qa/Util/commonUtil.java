@@ -116,6 +116,7 @@ public class commonUtil extends Base {
 				{
 					System.out.println(sURL + "  is broken link");
 					Reporter.log(sURL + "  is broken link");
+					Allure.step(sURL + "  is broken link");
 					iCount++;
 				}
 				else
@@ -130,14 +131,14 @@ public class commonUtil extends Base {
 				
 				e.printStackTrace();
 				Reporter.log("MalformedURLException: " + sURL);
-				
+				Allure.step("MalformedURLException: " + sURL);
 				System.out.println("MalformedURLException: " + sURL);
 			}
 			catch(Exception e1)
 			{
 				e1.printStackTrace();
 				Reporter.log("Exception: " + sURL );
-				
+				Allure.step("Exception: " + sURL);
 				System.out.println("Exception: " + sURL);
 			}
 			

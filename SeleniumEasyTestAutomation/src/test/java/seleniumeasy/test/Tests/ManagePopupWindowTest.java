@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -37,6 +38,7 @@ public class ManagePopupWindowTest extends Base
 		String sParentWindow = driver.getWindowHandle();
 		commonUtil.handlePopup(sParentWindow);
 		int numWindow = commonUtil.handlePopup(sParentWindow);
+		Allure.step("Verification: Expected : 1 Actual: " + numWindow );
 		sAssert.assertEquals(numWindow, 1);
 	}
 	
@@ -48,6 +50,7 @@ public class ManagePopupWindowTest extends Base
 		obj.verifyBtnFollowOnTwitter();
 		String sParentWindow = driver.getWindowHandle();
 		int numWindow = commonUtil.handlePopup(sParentWindow);
+		Allure.step("Verification: Expected : 1 Actual: " + numWindow );
 		sAssert.assertEquals(numWindow, 1);
 	}
 	@AfterMethod

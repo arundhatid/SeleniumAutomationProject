@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -50,11 +51,11 @@ public class tblDataSearchTest extends Base
 	@Description("Test Description: Search Test Based On Asignee which is populated through JSON Test data file")
 	public void verifySearchElementBasedOnAssignee(String sTestDataNo,String sAsigneeName)
 	{
-		System.out.println("sData1 is : " + sTestDataNo + "sUserName: "+ sAsigneeName);
+		//System.out.println("sData1 is : " + sTestDataNo + "sUserName: "+ sAsigneeName);
 		String sEnteredText;
 		sEnteredText = obj.searchFilterName(sTestDataNo,sAsigneeName);
 		
-		System.out.println("sEnteredText is : " + sEnteredText);
+		//System.out.println("sEnteredText is : " + sEnteredText);
 		Reporter.log("Entered Data: " + sEnteredText);
 		//System.out.println("The String is this: " + "//td[contains(text(),'" + sEnteredText + "'" + ")"+ "]");
 		if((sEnteredText!=null))
@@ -67,16 +68,23 @@ public class tblDataSearchTest extends Base
 					for(WebElement element:wAssignee)
 					{
 						System.out.println("The Actual User Name is: "+ element.getText());
-						Reporter.log("The Actual User Name is: "+ element.getText());
+						Reporter.log("Verification: Actual "+ element.getText() + " Expected: " + sEnteredText);
+						Allure.step("Verification: Actual "+ element.getText() + " Expected: " + sEnteredText);
 						sAssert.assertTrue(element.getText().contains(sEnteredText));
 					}
 				}
 				else
-					Reporter.log("The Actual User Name is: "+ wAssignee.get(0).getText());
+				{
+					Reporter.log("Verification: Actual "+ wAssignee.get(0).getText() + " Expected: " + sEnteredText);
+					Allure.step("Verification: Actual "+ wAssignee.get(0).getText() + " Expected: " + sEnteredText);
 					sAssert.assertTrue(wAssignee.get(0).getText().contains(sEnteredText));
+				}
 			}
 			else
-				Reporter.log("Element Not Found"+ sEnteredText);
+				{
+					Reporter.log("Element Not Found"+ sEnteredText);
+					Allure.step("Element Not Found"+ sEnteredText);
+				}
 		}
 		//sAssert.assertAll();
 		//Object[][] data = readJasonData();
@@ -89,7 +97,7 @@ public class tblDataSearchTest extends Base
 		System.out.println("sData1 is : " + sData1 + "sUserName: "+ sUserName);
 		
 		String sEnterUserName = obj.searchElement(sUserName);
-		System.out.println("sEnteredText is : " + sEnterUserName);
+		//System.out.println("sEnteredText is : " + sEnterUserName);
 		Reporter.log("Entered Data: " + sEnterUserName);
 		if((sEnterUserName!=null))
 		{
@@ -99,17 +107,21 @@ public class tblDataSearchTest extends Base
 			{
 				for(WebElement element:wActualUserName)
 				{
-					System.out.println("The Actual User Name is: "+ element.getText());
-					Reporter.log("The Actual User Name is: "+ element.getText());
+					//System.out.println("The Actual User Name is: "+ element.getText());
+					Reporter.log("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
+					Allure.step("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
 					sAssert.assertTrue(element.getText().contains(sEnterUserName));
 
 					
 				}
 			}
 			else
-				System.out.println("The Actual User Name is: "+ wActualUserName.get(0).getText());
-				Reporter.log("The Actual User Name is: "+ wActualUserName.get(0).getText());
+			{
+				//System.out.println("The Actual User Name is: "+ wActualUserName.get(0).getText());
+				Reporter.log("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
+				Allure.step("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
 				sAssert.assertTrue(wActualUserName.get(0).getText().contains(sEnterUserName), "Assert True");
+			}
 		}
 		
 	}
