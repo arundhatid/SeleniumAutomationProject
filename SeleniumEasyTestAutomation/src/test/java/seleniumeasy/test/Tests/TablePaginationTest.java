@@ -19,17 +19,15 @@ import seleniumeasy.qa.Page.tblPaginationPage;
 @Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class TablePaginationTest extends Base 
 {
-	//SoftAssert sAssert;
+	
 	HomePage hObj;
 	tblPaginationPage obj;
-	public TablePaginationTest()
-	{
-			}
+			
 	@BeforeMethod
 	public void setUp()
 	{
 		Init();
-		//sAssert = new SoftAssert();
+		
 		hObj = new HomePage();
 		obj = hObj.clickTablePagination();
 
@@ -40,28 +38,33 @@ public class TablePaginationTest extends Base
 	@Description("Test Description:Test to verify presence of Table Header")
 	public void verifyTableHeader()
 	{
+		SoftAssert sAssert = new SoftAssert();
 		String sHeading = obj.readTableHeader();
-		Reporter.log("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading);;
-		Allure.step("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading);
-		sAssert.assertEquals(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText(), sHeading);
-		
+		Reporter.log("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading+"_wrongStringAddedToDeliberatelyfailtest");;
+		Allure.step("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading+"_wrongStringAddedToDeliberatelyfailtest");
+		//sAssert.assertEquals(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText(), "_wrongStringAddedToDeliberatelyfailtest");
+		//sAssert.assertEquals(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText(), "_wrongStringAddedToDeliberatelyfailtest", "Verify Assert");
+		sAssert.assertTrue(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText().equals("_wrongStringAddedToDeliberatelyfailtest"),"Verification Failed: Expected: " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Actual: _wrongStringAddedToDeliberatelyfailtest");
+		sAssert.assertAll();
 	}
 	@Test(priority=2,description="Verify Table Contents")
 	@Severity(SeverityLevel.CRITICAL)
 	@Description("Test Description:Test to read table contents")
 	public void verifyTableContents()
 	{
-		obj.readTableContents();
-		//sAssert.assertAll();
+		SoftAssert sAssert = new SoftAssert();
+		int totalNumberofRows = obj.readTableContents();
+		Reporter.log("Verification: Actual : " + totalNumberofRows + " Expected: 91");
+		Allure.step("Verification: Actual : " + totalNumberofRows + " Expected: 91");
+		sAssert.assertEquals(totalNumberofRows, 91,"Verification: Actual: "+ totalNumberofRows +" Expected: 91");
+		sAssert.assertAll();
 	}
 	@AfterMethod
-	public void assertAllTests()
+	public void tearDown()
 	{
-		System.out.println("I am in TablePaginationTest AfterClass");
-		//sAssert.assertAll();
-		//postCleanUp("TablePaginationTest",driver);
+		
 		driver.close();
 		driver.quit();
-
+		
 	}
-	}
+}

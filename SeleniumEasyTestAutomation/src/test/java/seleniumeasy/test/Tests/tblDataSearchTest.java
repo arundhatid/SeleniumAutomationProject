@@ -41,7 +41,7 @@ public class tblDataSearchTest extends Base
 	public void setUp()
 	{
 		Init();
-		sAssert = new SoftAssert();
+		
 		tObj=new tblPaginationPage();
 		obj = tObj.clickTableDataSearchMenu();		
 
@@ -52,6 +52,7 @@ public class tblDataSearchTest extends Base
 	public void verifySearchElementBasedOnAssignee(String sTestDataNo,String sAsigneeName)
 	{
 		//System.out.println("sData1 is : " + sTestDataNo + "sUserName: "+ sAsigneeName);
+		SoftAssert sAssert = new SoftAssert();
 		String sEnteredText;
 		sEnteredText = obj.searchFilterName(sTestDataNo,sAsigneeName);
 		
@@ -70,14 +71,14 @@ public class tblDataSearchTest extends Base
 						System.out.println("The Actual User Name is: "+ element.getText());
 						Reporter.log("Verification: Actual "+ element.getText() + " Expected: " + sEnteredText);
 						Allure.step("Verification: Actual "+ element.getText() + " Expected: " + sEnteredText);
-						sAssert.assertTrue(element.getText().contains(sEnteredText));
+						sAssert.assertTrue(element.getText().contains(sEnteredText),"Verification: Actual "+ element.getText() + " Expected: " + sEnteredText);
 					}
 				}
 				else
 				{
 					Reporter.log("Verification: Actual "+ wAssignee.get(0).getText() + " Expected: " + sEnteredText);
 					Allure.step("Verification: Actual "+ wAssignee.get(0).getText() + " Expected: " + sEnteredText);
-					sAssert.assertTrue(wAssignee.get(0).getText().contains(sEnteredText));
+					sAssert.assertTrue(wAssignee.get(0).getText().contains(sEnteredText),"Verification: Actual "+ wAssignee.get(0).getText() + " Expected: " + sEnteredText);
 				}
 			}
 			else
@@ -86,7 +87,7 @@ public class tblDataSearchTest extends Base
 					Allure.step("Element Not Found"+ sEnteredText);
 				}
 		}
-		//sAssert.assertAll();
+		sAssert.assertAll();
 		//Object[][] data = readJasonData();
 	}
 	@Test(priority='a',description="Verify Search Based on Username Criteria which is populated through JSON Test data file",dataProvider="readDataFromJason",dataProviderClass=commonUtil.class)
@@ -94,8 +95,8 @@ public class tblDataSearchTest extends Base
 	@Description("Test Description: JSON Data Driven Test Based On Username")
 	public void verifySearchElementBasedOnUsername(String sData1, String sUserName)
 	{		
-		System.out.println("sData1 is : " + sData1 + "sUserName: "+ sUserName);
-		
+		//System.out.println("sData1 is : " + sData1 + "sUserName: "+ sUserName);
+		SoftAssert sAssert = new SoftAssert();
 		String sEnterUserName = obj.searchElement(sUserName);
 		//System.out.println("sEnteredText is : " + sEnterUserName);
 		Reporter.log("Entered Data: " + sEnterUserName);
@@ -110,7 +111,7 @@ public class tblDataSearchTest extends Base
 					//System.out.println("The Actual User Name is: "+ element.getText());
 					Reporter.log("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
 					Allure.step("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
-					sAssert.assertTrue(element.getText().contains(sEnterUserName));
+					sAssert.assertTrue(element.getText().contains(sEnterUserName),"Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
 
 					
 				}
@@ -120,10 +121,11 @@ public class tblDataSearchTest extends Base
 				//System.out.println("The Actual User Name is: "+ wActualUserName.get(0).getText());
 				Reporter.log("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
 				Allure.step("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
-				sAssert.assertTrue(wActualUserName.get(0).getText().contains(sEnterUserName), "Assert True");
+				sAssert.assertTrue(wActualUserName.get(0).getText().contains(sEnterUserName), "Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
 			}
 		}
 		
+		sAssert.assertAll();
 	}
 	
 	

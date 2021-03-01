@@ -34,12 +34,14 @@ public class ManagePopupWindowTest extends Base
 	@Severity(SeverityLevel.CRITICAL)
 	public void verifyFollowAll()
 	{
+		SoftAssert sAssert = new SoftAssert();
 		obj.verifyBtnFollowAll();
 		String sParentWindow = driver.getWindowHandle();
 		commonUtil.handlePopup(sParentWindow);
 		int numWindow = commonUtil.handlePopup(sParentWindow);
 		Allure.step("Verification: Expected : 1 Actual: " + numWindow );
 		sAssert.assertEquals(numWindow, 1);
+		sAssert.assertAll();
 	}
 	
 	@Test(priority=1,description="Verify that popup for Twitter window close successfully")
@@ -47,11 +49,13 @@ public class ManagePopupWindowTest extends Base
 	@Severity(SeverityLevel.CRITICAL)
 	public void testBtnFollowOnTwitter()
 	{
+		SoftAssert sAssert = new SoftAssert();
 		obj.verifyBtnFollowOnTwitter();
 		String sParentWindow = driver.getWindowHandle();
 		int numWindow = commonUtil.handlePopup(sParentWindow);
 		Allure.step("Verification: Expected : 1 Actual: " + numWindow );
 		sAssert.assertEquals(numWindow, 1);
+		sAssert.assertAll();
 	}
 	@AfterMethod
 	public void postCleanUp()

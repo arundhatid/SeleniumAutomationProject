@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import seleniumeasy.qa.Base.Base;
 
@@ -44,15 +45,15 @@ public class tblPaginationPage extends Base
 		{
 			if(row.getText().equalsIgnoreCase("Table heading 4"))
 				sHeading = row.getText();
-			//System.out.println(row.getText());
+			System.out.println(row.getText());
 		}
 		System.out.println("Total Number of Columns Are: " + tblHeader.size());
 		
 		return sHeading;
 	}
 	
-	@Step("Read table contents")
-	public void readTableContents()
+	@Step("Read table contents.")
+	public int readTableContents()
 	{
 		for(WebElement row : tblContents)
 			System.out.println(row.getText());
@@ -64,7 +65,8 @@ public class tblPaginationPage extends Base
 			System.out.println(row.getText());
 
 		System.out.println("Total Number of rows Are: " + tblContents.size());
-		
+		Allure.step("Count number of rows in table.");
+		return tblContents.size();
 	}
 	public tblDataSearchPage clickTableDataSearchMenu()
 	{

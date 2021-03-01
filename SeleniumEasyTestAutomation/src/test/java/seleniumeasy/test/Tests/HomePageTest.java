@@ -39,13 +39,15 @@ public class HomePageTest extends Base
 	@Description("test Description :  Verify Table Pagination Menu Open")
 	public void verifyTablePaginationMenu()
 	{
+		SoftAssert sAssert = new SoftAssert();
 		Reporter.log("Test Name is: verifyTablePaginationMenu");
 		tblObj = obj.clickTablePagination();
 		WebElement sPageTitle = driver.findElement(By.tagName("h2"));
 		Allure.step("Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
-		sAssert.assertEquals("Table with Pagination Examples", sPageTitle.getText());
+		//sAssert.assertEquals("Table with Pagination Examples", sPageTitle.getText());
 		//commonUtil.takeScreenShot(driver, "firstScreenShot");
-		
+		sAssert.assertTrue(sPageTitle.getText().equals("Table with Pagination Examples"), "Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
+		sAssert.assertAll();
 		
 		
 	}
@@ -59,14 +61,4 @@ public class HomePageTest extends Base
 		driver.quit();
 		
 	}
-	//@AfterTest()
-	public void assertAll()
-	{
-		//sAssert.assertAll();
-	}
-	/*@AfterClass
-	public void closeConnection()
-	{
-		//postCleanUp();
-	}*/
 }

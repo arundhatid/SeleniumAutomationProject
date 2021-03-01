@@ -27,7 +27,7 @@ public class Base {
 	protected static WebDriver driver;
 	private static FileInputStream fis;
 	private static Properties prop;
-	protected static SoftAssert sAssert;
+	
 	public Base()
 	{
 		//System.out.println("I am in Base constructor");
@@ -53,7 +53,6 @@ public class Base {
 		
 		//if(driver==null)
 		//{
-			sAssert = new SoftAssert();
 			
 			if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 			{
