@@ -44,9 +44,7 @@ public class HomePageTest extends Base
 		tblObj = obj.clickTablePagination();
 		WebElement sPageTitle = driver.findElement(By.tagName("h2"));
 		Allure.step("Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
-		//sAssert.assertEquals("Table with Pagination Examples", sPageTitle.getText());
-		//commonUtil.takeScreenShot(driver, "firstScreenShot");
-		sAssert.assertTrue(sPageTitle.getText().equals("Table with Pagination Examples"), "Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
+		//sAssert.assertEquals("Table with PaginatisAssert.assertTrue(sPageTitle.getText().equals("Table with Pagination Examples"), "Verification Step: Expected : Table with Pagination Examples Actaul: " + sPageTitle.getText() );
 		sAssert.assertAll();
 		
 		
@@ -54,9 +52,6 @@ public class HomePageTest extends Base
 	@AfterMethod
 	public void postCleanUp()
 	{
-		//System.out.println("I am in HomePage AfterClass");
-		//System.out.println("I came here");
-		//postCleanUp("HomePageTest",driver);
 		driver.close();
 		driver.quit();
 		

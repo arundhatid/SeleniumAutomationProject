@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-AutomationSuit">
-              <span class="suite-name border-passed">AutomationSuit</span>
+              <span class="suite-name border-failed">AutomationSuit</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods,   20 passed</span>
+                    <span class="method-stats">20 methods, 1 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomationSuit" class="hide-methods failed suite-AutomationSuit"> (hide)</a> <!-- hide-methods failed suite-AutomationSuit -->
+                      <a href="#" panel-name="suite-AutomationSuit" class="show-methods failed suite-AutomationSuit"> (show)</a> <!-- show-methods failed suite-AutomationSuit -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomationSuit">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.TablePaginationTest" hash-for-method="verifyTableHeader">verifyTableHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomationSuit -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -112,11 +126,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)">validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, John, Smith, abcd@gmail.com, 1.23456789E8, Dummy Address, Atlanta, Georgia, 303...)">validateInputForm(InputForm_TestCase1, John, Smith, abcd@gmail.com, 1.23456789E8, Dummy Address, Atlanta, Georgia, 303...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -127,17 +136,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)">validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, India, Thomas, cccc@gmail.com, 2.13243242E8, Dummy Address, Atlanta, Georgia, 3...)">validateInputForm(InputForm_TestCase1, India, Thomas, cccc@gmail.com, 2.13243242E8, Dummy Address, Atlanta, Georgia, 3...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)">validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)">validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)">validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.InputFormValidationTest" hash-for-method="validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)">validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -192,11 +206,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.TablePaginationTest" hash-for-method="verifyTableHeader">verifyTableHeader</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationSuit" title="seleniumeasy.test.Tests.HomePageTest" hash-for-method="verifyTablePaginationMenu">verifyTablePaginationMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -212,28 +221,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AutomationSuit" class="panel AutomationSuit">
-          <div class="suite-AutomationSuit-class-passed">
+          <div class="suite-AutomationSuit-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">seleniumeasy.test.Tests.TablePaginationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTableContents">
-                  </a> <!-- verifyTableContents -->
-                  <span class="method-name">verifyTableContents</span>
-                  <em>
-(Verify Table Contents)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyTableHeader">
                   </a> <!-- verifyTableHeader -->
                   <span class="method-name">verifyTableHeader</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verification Failed: Expected: Table heading 4 Actual: _wrongStringAddedToDeliberatelyfailtest expected [true] but found [false]
+	at seleniumeasy.test.Tests.TablePaginationTest.verifyTableHeader(TablePaginationTest.java:46)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verify Table Header)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuit-class-failed -->
+          <div class="suite-AutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">seleniumeasy.test.Tests.BrokenLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBrokenLinks">
+                  </a> <!-- testBrokenLinks -->
+                  <span class="method-name">testBrokenLinks</span>
+                  <em>
+(Find the number of broken links in website)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,16 +266,6 @@
               <span class="class-name">seleniumeasy.test.Tests.InputFormValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)">
-                  </a> <!-- validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...) -->
-                  <span class="method-name">validateInputForm</span>
-                  <span class="parameters">(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
-                  <em>
-(Data driven test using excel to insert records in the system)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validateInputForm(InputForm_TestCase1, John, Smith, abcd@gmail.com, 1.23456789E8, Dummy Address, Atlanta, Georgia, 303...)">
@@ -276,6 +288,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)">
+                  </a> <!-- validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...) -->
+                  <span class="method-name">validateInputForm</span>
+                  <span class="parameters">(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
+                  <em>
+(Data driven test using excel to insert records in the system)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validateInputForm(InputForm_TestCase1, India, Thomas, cccc@gmail.com, 2.13243242E8, Dummy Address, Atlanta, Georgia, 3...)">
                   </a> <!-- validateInputForm(InputForm_TestCase1, India, Thomas, cccc@gmail.com, 2.13243242E8, Dummy Address, Atlanta, Georgia, 3...) -->
                   <span class="method-name">validateInputForm</span>
@@ -286,20 +308,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)">
-                  </a> <!-- validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...) -->
+                  <a name="validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)">
+                  </a> <!-- validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...) -->
                   <span class="method-name">validateInputForm</span>
-                  <span class="parameters">(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
+                  <span class="parameters">(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
                   <em>
 (Data driven test using excel to insert records in the system)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)">
-                  </a> <!-- validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...) -->
+                  <a name="validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)">
+                  </a> <!-- validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...) -->
                   <span class="method-name">validateInputForm</span>
-                  <span class="parameters">(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
+                  <span class="parameters">(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
                   <em>
 (Data driven test using excel to insert records in the system)                  </em>
                 </div> <!-- method-content -->
@@ -332,66 +354,6 @@
                   <span class="parameters">(InputForm_TestCase1, Mary, Joe, qayg@gmail.com, 6.78866666E8, Dummy Address, Atlanta, Georgia, 30338.0, NA, No, nnm)</span>
                   <em>
 (Data driven test using excel to insert records in the system)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationSuit-class-passed -->
-          <div class="suite-AutomationSuit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">seleniumeasy.test.Tests.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTablePaginationMenu">
-                  </a> <!-- verifyTablePaginationMenu -->
-                  <span class="method-name">verifyTablePaginationMenu</span>
-                  <em>
-(Verify Table Pagination Menu Opens successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationSuit-class-passed -->
-          <div class="suite-AutomationSuit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">seleniumeasy.test.Tests.ManagePopupWindowTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBtnFollowOnTwitter">
-                  </a> <!-- testBtnFollowOnTwitter -->
-                  <span class="method-name">testBtnFollowOnTwitter</span>
-                  <em>
-(Verify that popup for Twitter window close successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFollowAll">
-                  </a> <!-- verifyFollowAll -->
-                  <span class="method-name">verifyFollowAll</span>
-                  <em>
-(Verify that all pop up windows close successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationSuit-class-passed -->
-          <div class="suite-AutomationSuit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">seleniumeasy.test.Tests.BrokenLinkTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBrokenLinks">
-                  </a> <!-- testBrokenLinks -->
-                  <span class="method-name">testBrokenLinks</span>
-                  <em>
-(Find the number of broken links in website)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -454,6 +416,66 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AutomationSuit-class-passed -->
+          <div class="suite-AutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">seleniumeasy.test.Tests.TablePaginationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTableContents">
+                  </a> <!-- verifyTableContents -->
+                  <span class="method-name">verifyTableContents</span>
+                  <em>
+(Verify Table Contents)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuit-class-passed -->
+          <div class="suite-AutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">seleniumeasy.test.Tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTablePaginationMenu">
+                  </a> <!-- verifyTablePaginationMenu -->
+                  <span class="method-name">verifyTablePaginationMenu</span>
+                  <em>
+(Verify Table Pagination Menu Opens successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuit-class-passed -->
+          <div class="suite-AutomationSuit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">seleniumeasy.test.Tests.ManagePopupWindowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBtnFollowOnTwitter">
+                  </a> <!-- testBtnFollowOnTwitter -->
+                  <span class="method-name">testBtnFollowOnTwitter</span>
+                  <em>
+(Verify that popup for Twitter window close successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFollowAll">
+                  </a> <!-- verifyFollowAll -->
+                  <span class="method-name">verifyFollowAll</span>
+                  <em>
+(Verify that all pop up windows close successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuit-class-passed -->
         </div> <!-- panel AutomationSuit -->
         <div panel-name="test-xml-AutomationSuit" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -465,6 +487,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AutomationSuit&quot;&gt;
   &lt;listeners&gt;
+    &lt;listener class-name=&quot;seleniumeasy.qa.Util.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;seleniumeasy.qa.Util.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;smoke&quot;&gt;
@@ -525,15 +548,15 @@ data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testBrokenLinks')
 data.setCell(0, 2, 'seleniumeasy.test.Tests.BrokenLinkTest')
-data.setCell(0, 3, 44659);
+data.setCell(0, 3, 63115);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifySearchElementBasedOnAssignee')
 data.setCell(1, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(1, 3, 30913);
+data.setCell(1, 3, 30905);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyFollowAll')
 data.setCell(2, 2, 'seleniumeasy.test.Tests.ManagePopupWindowTest')
-data.setCell(2, 3, 9367);
+data.setCell(2, 3, 9922);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testBtnFollowOnTwitter')
 data.setCell(3, 2, 'seleniumeasy.test.Tests.ManagePopupWindowTest')
@@ -541,72 +564,72 @@ data.setCell(3, 3, 4445);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyTableContents')
 data.setCell(4, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
-data.setCell(4, 3, 2909);
+data.setCell(4, 3, 2613);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'validateInputForm')
 data.setCell(5, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(5, 3, 1713);
+data.setCell(5, 3, 1559);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'validateInputForm')
 data.setCell(6, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(6, 3, 1475);
+data.setCell(6, 3, 1416);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'validateInputForm')
 data.setCell(7, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(7, 3, 1403);
+data.setCell(7, 3, 1330);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'validateInputForm')
 data.setCell(8, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(8, 3, 1302);
+data.setCell(8, 3, 1282);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'validateInputForm')
 data.setCell(9, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(9, 3, 1264);
+data.setCell(9, 3, 1262);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'validateInputForm')
 data.setCell(10, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(10, 3, 1260);
+data.setCell(10, 3, 1253);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'validateInputForm')
 data.setCell(11, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(11, 3, 1240);
+data.setCell(11, 3, 1245);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'validateInputForm')
 data.setCell(12, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(12, 3, 1240);
+data.setCell(12, 3, 1198);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validateInputForm')
-data.setCell(13, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
-data.setCell(13, 3, 1236);
+data.setCell(13, 1, 'verifySearchElementBasedOnUsername')
+data.setCell(13, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
+data.setCell(13, 3, 1170);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifySearchElementBasedOnUsername')
-data.setCell(14, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(14, 3, 1068);
+data.setCell(14, 1, 'validateInputForm')
+data.setCell(14, 2, 'seleniumeasy.test.Tests.InputFormValidationTest')
+data.setCell(14, 3, 1165);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifySearchElementBasedOnUsername')
+data.setCell(15, 1, 'verifySearchElementBasedOnAssignee')
 data.setCell(15, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(15, 3, 1065);
+data.setCell(15, 3, 979);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'verifySearchElementBasedOnAssignee')
 data.setCell(16, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(16, 3, 961);
+data.setCell(16, 3, 956);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifySearchElementBasedOnAssignee')
-data.setCell(17, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
-data.setCell(17, 3, 938);
+data.setCell(17, 1, 'verifyTablePaginationMenu')
+data.setCell(17, 2, 'seleniumeasy.test.Tests.HomePageTest')
+data.setCell(17, 3, 475);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyTablePaginationMenu')
-data.setCell(18, 2, 'seleniumeasy.test.Tests.HomePageTest')
-data.setCell(18, 3, 478);
+data.setCell(18, 1, 'verifySearchElementBasedOnUsername')
+data.setCell(18, 2, 'seleniumeasy.test.Tests.tblDataSearchTest')
+data.setCell(18, 3, 353);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'verifyTableHeader')
 data.setCell(19, 2, 'seleniumeasy.test.Tests.TablePaginationTest')
-data.setCell(19, 3, 180);
+data.setCell(19, 3, 280);
 window.suiteTableData['AutomationSuit']= { tableData: data, tableDiv: 'times-div-AutomationSuit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-AutomationSuit">
               </div> <!-- times-div-AutomationSuit -->
             </div> <!-- times-div -->
@@ -748,9 +771,38 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyTablePaginationMenu</span>
+              <span class="reporter-method-name">verifySearchElementBasedOnUsername(2, John)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Name is: verifyTablePaginationMenu</span>
+                <span class="reporter-method-output">Test Data is : John</span>
+                <span class="reporter-method-output">Entered Data: </span>
+                <span class="reporter-method-output">Verification: Actual: 1 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Wireframes Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: John Smith Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: in progress Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 2 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Landing Page Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Mike Trout Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: completed Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 3 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: SEO tags Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Loblab Dan Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: failed qa Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 4 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Bootstrap 3 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Emily John Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: in progress Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 5 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: jQuery library Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Holden Charles Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: deployed Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 6 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Browser Issues Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Jane Doe Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: failed qa Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: 7 Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Bug fixing Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: Kilgore Trout Expected: </span>
+                <span class="reporter-method-output">Verification: Actual: in progress Expected: </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -758,7 +810,27 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">TestData is: xyz</span>
                 <span class="reporter-method-output">Entered Data: xyz</span>
-                <span class="reporter-method-output">Element Not Foundxyz</span>
+                <span class="reporter-method-output">Element Not Found:  xyz</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyTableContents</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verification: Actual : 91 Expected: 91</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyTablePaginationMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Name is: verifyTablePaginationMenu</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifySearchElementBasedOnUsername(1, Smith)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Data is : Smith</span>
+                <span class="reporter-method-output">Entered Data: Smith</span>
+                <span class="reporter-method-output">Verification: Actual: John Smith Expected: Smith</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -766,7 +838,7 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">TestData is: markino</span>
                 <span class="reporter-method-output">Entered Data: markino</span>
-                <span class="reporter-method-output">The Actual User Name is: markino</span>
+                <span class="reporter-method-output">Verification: Actual markino Expected: markino</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -774,79 +846,13 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">TestData is: larry</span>
                 <span class="reporter-method-output">Entered Data: larry</span>
-                <span class="reporter-method-output">The Actual User Name is: larrypt</span>
+                <span class="reporter-method-output">Verification: Actual larrypt Expected: larry</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySearchElementBasedOnUsername(2, John)</span>
+              <span class="reporter-method-name">verifyTableHeader</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Data is : John</span>
-                <span class="reporter-method-output">Entered Data: </span>
-                <span class="reporter-method-output">The Actual User Name is: 1</span>
-                <span class="reporter-method-output">The Actual User Name is: Wireframes</span>
-                <span class="reporter-method-output">The Actual User Name is: John Smith</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 2</span>
-                <span class="reporter-method-output">The Actual User Name is: Landing Page</span>
-                <span class="reporter-method-output">The Actual User Name is: Mike Trout</span>
-                <span class="reporter-method-output">The Actual User Name is: completed</span>
-                <span class="reporter-method-output">The Actual User Name is: 3</span>
-                <span class="reporter-method-output">The Actual User Name is: SEO tags</span>
-                <span class="reporter-method-output">The Actual User Name is: Loblab Dan</span>
-                <span class="reporter-method-output">The Actual User Name is: failed qa</span>
-                <span class="reporter-method-output">The Actual User Name is: 4</span>
-                <span class="reporter-method-output">The Actual User Name is: Bootstrap 3</span>
-                <span class="reporter-method-output">The Actual User Name is: Emily John</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 5</span>
-                <span class="reporter-method-output">The Actual User Name is: jQuery library</span>
-                <span class="reporter-method-output">The Actual User Name is: Holden Charles</span>
-                <span class="reporter-method-output">The Actual User Name is: deployed</span>
-                <span class="reporter-method-output">The Actual User Name is: 6</span>
-                <span class="reporter-method-output">The Actual User Name is: Browser Issues</span>
-                <span class="reporter-method-output">The Actual User Name is: Jane Doe</span>
-                <span class="reporter-method-output">The Actual User Name is: failed qa</span>
-                <span class="reporter-method-output">The Actual User Name is: 7</span>
-                <span class="reporter-method-output">The Actual User Name is: Bug fixing</span>
-                <span class="reporter-method-output">The Actual User Name is: Kilgore Trout</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 1</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySearchElementBasedOnUsername(1, Smith)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Data is : Smith</span>
-                <span class="reporter-method-output">Entered Data: </span>
-                <span class="reporter-method-output">The Actual User Name is: 1</span>
-                <span class="reporter-method-output">The Actual User Name is: Wireframes</span>
-                <span class="reporter-method-output">The Actual User Name is: John Smith</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 2</span>
-                <span class="reporter-method-output">The Actual User Name is: Landing Page</span>
-                <span class="reporter-method-output">The Actual User Name is: Mike Trout</span>
-                <span class="reporter-method-output">The Actual User Name is: completed</span>
-                <span class="reporter-method-output">The Actual User Name is: 3</span>
-                <span class="reporter-method-output">The Actual User Name is: SEO tags</span>
-                <span class="reporter-method-output">The Actual User Name is: Loblab Dan</span>
-                <span class="reporter-method-output">The Actual User Name is: failed qa</span>
-                <span class="reporter-method-output">The Actual User Name is: 4</span>
-                <span class="reporter-method-output">The Actual User Name is: Bootstrap 3</span>
-                <span class="reporter-method-output">The Actual User Name is: Emily John</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 5</span>
-                <span class="reporter-method-output">The Actual User Name is: jQuery library</span>
-                <span class="reporter-method-output">The Actual User Name is: Holden Charles</span>
-                <span class="reporter-method-output">The Actual User Name is: deployed</span>
-                <span class="reporter-method-output">The Actual User Name is: 6</span>
-                <span class="reporter-method-output">The Actual User Name is: Browser Issues</span>
-                <span class="reporter-method-output">The Actual User Name is: Jane Doe</span>
-                <span class="reporter-method-output">The Actual User Name is: failed qa</span>
-                <span class="reporter-method-output">The Actual User Name is: 7</span>
-                <span class="reporter-method-output">The Actual User Name is: Bug fixing</span>
-                <span class="reporter-method-output">The Actual User Name is: Kilgore Trout</span>
-                <span class="reporter-method-output">The Actual User Name is: in progress</span>
-                <span class="reporter-method-output">The Actual User Name is: 1</span>
+                <span class="reporter-method-output">Verification: Actual : Table heading 4 Expected: Table heading 4_wrongStringAddedToDeliberatelyfailtest</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -871,259 +877,257 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBrokenLinks</span>
-                <span class="method-start">10161 ms</span>
+                <span class="method-start">11636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCleanUp</span>
-                <span class="method-start">54837 ms</span>
+                <span class="method-start">74784 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.ManagePopupWindowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55677 ms</span>
+                <span class="method-start">75590 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBtnFollowOnTwitter</span>
-                <span class="method-start">65448 ms</span>
+                <span class="method-start">84804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCleanUp</span>
-                <span class="method-start">69895 ms</span>
+                <span class="method-start">89255 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">70682 ms</span>
+                <span class="method-start">90092 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFollowAll</span>
-                <span class="method-start">80640 ms</span>
+                <span class="method-start">99262 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCleanUp</span>
-                <span class="method-start">90009 ms</span>
+                <span class="method-start">109186 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">90992 ms</span>
+                <span class="method-start">110205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTablePaginationMenu</span>
-                <span class="method-start">99943 ms</span>
+                <span class="method-start">119091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCleanUp</span>
-                <span class="method-start">100423 ms</span>
+                <span class="method-start">119568 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.TablePaginationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">101199 ms</span>
+                <span class="method-start">120343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyTableHeader</span>
-                <span class="method-start">110566 ms</span>
+                <span class="method-start">129495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">assertAllTests</span>
-                <span class="method-start">110748 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">130514 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">111957 ms</span>
+                <span class="method-start">131265 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTableContents</span>
-                <span class="method-start">120874 ms</span>
+                <span class="method-start">140432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">assertAllTests</span>
-                <span class="method-start">123786 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143047 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.tblDataSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">124952 ms</span>
+                <span class="method-start">143839 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnUsername(1, Smith)</span>
-                <span class="method-start">134300 ms</span>
+                <span class="method-start">153983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">135371 ms</span>
+                <span class="method-start">154339 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">136150 ms</span>
+                <span class="method-start">155074 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnUsername(2, John)</span>
-                <span class="method-start">145890 ms</span>
+                <span class="method-start">166948 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">146957 ms</span>
+                <span class="method-start">168120 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">147744 ms</span>
+                <span class="method-start">168899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnAssignee(1, markino)</span>
-                <span class="method-start">156890 ms</span>
+                <span class="method-start">178065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">157830 ms</span>
+                <span class="method-start">179047 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">158593 ms</span>
+                <span class="method-start">180238 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnAssignee(2, larry)</span>
-                <span class="method-start">168345 ms</span>
+                <span class="method-start">189447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">169308 ms</span>
+                <span class="method-start">190405 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">170069 ms</span>
+                <span class="method-start">191611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchElementBasedOnAssignee(3, xyz)</span>
-                <span class="method-start">181185 ms</span>
+                <span class="method-start">200936 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">assertAllTests</span>
-                <span class="method-start">212102 ms</span>
+                <span class="method-start">231844 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">seleniumeasy.test.Tests.InputFormValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">214001 ms</span>
+                <span class="method-start">233644 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, John, Smith, abcd@gmail.com, 1.23456789E8, Dummy Address, Atlanta, Georgia, 303...)</span>
-                <span class="method-start">224544 ms</span>
+                <span class="method-start">243127 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">225852 ms</span>
+                <span class="method-start">244330 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">226632 ms</span>
+                <span class="method-start">245082 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Mary, Joe, qayg@gmail.com, 6.78866666E8, Dummy Address, Atlanta, Georgia, 30338...)</span>
-                <span class="method-start">236326 ms</span>
+                <span class="method-start">254834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">237570 ms</span>
+                <span class="method-start">256166 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">238360 ms</span>
+                <span class="method-start">257621 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, John, Doe, ssss@gmail.com, 4.24234324E8, Dummy Address, Atlanta, Georgia, 30338...)</span>
-                <span class="method-start">247217 ms</span>
+                <span class="method-start">266716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">248484 ms</span>
+                <span class="method-start">267883 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">249252 ms</span>
+                <span class="method-start">268677 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Jane, Doe, tttt@gmail.com, 6.82142344E8, Dummy Address, Atlanta, Georgia, 30338...)</span>
-                <span class="method-start">258460 ms</span>
+                <span class="method-start">277819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">259703 ms</span>
+                <span class="method-start">279078 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">260549 ms</span>
+                <span class="method-start">279867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Margaret, Thatcher, dummy@gmail.com, 1.24343244E8, Dummy Address, Atlanta, Geor...)</span>
-                <span class="method-start">269456 ms</span>
+                <span class="method-start">289434 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">270721 ms</span>
+                <span class="method-start">290702 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">271499 ms</span>
+                <span class="method-start">291546 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Barack, Omaba, jjjj@gmail.com, 7.666866666E9, Dummy Address, Atlanta, Georgia, ...)</span>
-                <span class="method-start">281826 ms</span>
+                <span class="method-start">300567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">283541 ms</span>
+                <span class="method-start">301815 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">284721 ms</span>
+                <span class="method-start">303026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Hillary, Clinton, zzzz@gmail.com, 6.788686868E9, Dummy Address, Atlanta, Georgi...)</span>
-                <span class="method-start">293702 ms</span>
+                <span class="method-start">313797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">294942 ms</span>
+                <span class="method-start">315085 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">296109 ms</span>
+                <span class="method-start">315884 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, India, Thomas, cccc@gmail.com, 2.13243242E8, Dummy Address, Atlanta, Georgia, 3...)</span>
-                <span class="method-start">304959 ms</span>
+                <span class="method-start">325183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">306438 ms</span>
+                <span class="method-start">326602 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUP</span>
-                <span class="method-start">307258 ms</span>
+                <span class="method-start">327431 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateInputForm(InputForm_TestCase1, Nitor, Manhatten, vvvv@gmail.com, 4.32423423E8, Dummy Address, Atlanta, Georgia...)</span>
-                <span class="method-start">316505 ms</span>
+                <span class="method-start">336338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">317911 ms</span>
+                <span class="method-start">337900 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">assertAll</span>
-                <span class="method-start">318789 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

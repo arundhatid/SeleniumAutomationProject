@@ -26,13 +26,13 @@ public class Base {
 	
 	protected static WebDriver driver;
 	private static FileInputStream fis;
-	private static Properties prop;
+	protected static Properties prop;
 	
 	public Base()
 	{
-		//System.out.println("I am in Base constructor");
+		System.out.println(System.getProperty("user.dir") + commonUtil.sConfigPath);
 		try {
-			fis = new FileInputStream(commonUtil.sConfigPath);
+			fis = new FileInputStream(System.getProperty("user.dir") + commonUtil.sConfigPath);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -53,20 +53,21 @@ public class Base {
 		
 		//if(driver==null)
 		//{
+			String sDriverPath = System.getProperty("user.dir");
 			
 			if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 			{
-				System.setProperty(prop.getProperty("chromekey"),prop.getProperty("chromepath"));
+				System.setProperty(prop.getProperty("chromekey"),sDriverPath+prop.getProperty("chromepath"));
 				driver = new ChromeDriver();			
 			}
 			if(prop.getProperty("browser").equalsIgnoreCase("edge"))
 			{
-				System.setProperty(prop.getProperty("edgekey"),prop.getProperty("edgepath"));
+				System.setProperty(prop.getProperty("edgekey"),sDriverPath+prop.getProperty("edgepath"));
 				driver = new EdgeDriver();			
 			}
 			if(prop.getProperty("browser").equalsIgnoreCase("ff"))
 			{
-				System.setProperty(prop.getProperty("ffkey"),prop.getProperty("ffpath"));
+				System.setProperty(prop.getProperty("ffkey"),sDriverPath+prop.getProperty("ffpath"));
 				driver = new FirefoxDriver();			
 			}
 			driver.manage().deleteAllCookies();

@@ -33,10 +33,7 @@ public class tblDataSearchTest extends Base
 	tblPaginationPage tObj;
 	tblDataSearchPage obj;
 	
-	public tblDataSearchTest()
-	{
-		
-	}
+	
 	@BeforeMethod
 	public void setUp()
 	{
@@ -83,8 +80,8 @@ public class tblDataSearchTest extends Base
 			}
 			else
 				{
-					Reporter.log("Element Not Found"+ sEnteredText);
-					Allure.step("Element Not Found"+ sEnteredText);
+					Reporter.log("Element Not Found:  "+ sEnteredText);
+					Allure.step("Element Not Found:  "+ sEnteredText);
 				}
 		}
 		sAssert.assertAll();
@@ -109,8 +106,8 @@ public class tblDataSearchTest extends Base
 				for(WebElement element:wActualUserName)
 				{
 					//System.out.println("The Actual User Name is: "+ element.getText());
-					Reporter.log("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
-					Allure.step("Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
+					Reporter.log("Verification: Actual: "+ element.getText() + " Expected: " + sEnterUserName);
+					Allure.step("Verification: Actual: "+ element.getText() + " Expected: " + sEnterUserName);
 					sAssert.assertTrue(element.getText().contains(sEnterUserName),"Verification: Actua: "+ element.getText() + " Expected: " + sEnterUserName);
 
 					
@@ -119,8 +116,8 @@ public class tblDataSearchTest extends Base
 			else
 			{
 				//System.out.println("The Actual User Name is: "+ wActualUserName.get(0).getText());
-				Reporter.log("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
-				Allure.step("Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
+				Reporter.log("Verification: Actual: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
+				Allure.step("Verification: Actual: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
 				sAssert.assertTrue(wActualUserName.get(0).getText().contains(sEnterUserName), "Verification: Actua: "+ wActualUserName.get(0).getText() + " Expected: " + sEnterUserName);
 			}
 		}

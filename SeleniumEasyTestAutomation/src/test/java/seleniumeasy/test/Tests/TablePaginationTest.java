@@ -42,8 +42,6 @@ public class TablePaginationTest extends Base
 		String sHeading = obj.readTableHeader();
 		Reporter.log("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading+"_wrongStringAddedToDeliberatelyfailtest");;
 		Allure.step("Verification: Actual : " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Expected: " + sHeading+"_wrongStringAddedToDeliberatelyfailtest");
-		//sAssert.assertEquals(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText(), "_wrongStringAddedToDeliberatelyfailtest");
-		//sAssert.assertEquals(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText(), "_wrongStringAddedToDeliberatelyfailtest", "Verify Assert");
 		sAssert.assertTrue(driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText().equals("_wrongStringAddedToDeliberatelyfailtest"),"Verification Failed: Expected: " + driver.findElement(By.xpath("//th[text()='Table heading 4']")).getText() + " Actual: _wrongStringAddedToDeliberatelyfailtest");
 		sAssert.assertAll();
 	}

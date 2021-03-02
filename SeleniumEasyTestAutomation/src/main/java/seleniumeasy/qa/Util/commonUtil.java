@@ -31,8 +31,8 @@ import seleniumeasy.qa.Base.Base;
 
 public class commonUtil extends Base {
 	
-	public static String sConfigPath = "\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\Config\\config.properties";
-	public static String sScreenShotFolderPath = "\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\Screenshots";
+	public static String sConfigPath = "\\src\\main\\java\\seleniumeasy\\qa\\Config\\config.properties";
+	public static String sScreenShotFolderPath = "\\Screenshots";
 	
 	public static int iImplicitWait = 30;
 	
@@ -73,7 +73,7 @@ public class commonUtil extends Base {
 		
 		//TakesScreenshot scrShot = (TakesScreenshot)driver;
 		scrFile =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		picFile = new File(sScreenShotFolderPath + "\\" + sFileName + ".jpg");
+		picFile = new File(System.getProperty("user.dir") + sScreenShotFolderPath + "\\" + sFileName + ".jpg");
 		try {
 			FileUtils.copyFile(scrFile, picFile);
 		} catch (IOException e) {
@@ -151,12 +151,12 @@ public class commonUtil extends Base {
 	@DataProvider(name="readDataFromJason")
 	public static Object[][] readJasonData(Method method)
 	{
-		
+		//System.out.println("File Path is: " + System.getProperty("user.dir") + prop.getProperty("TestDataFile_JSON"));
 		JSONParser jParser = new JSONParser();
 		FileReader reader = null;
 		Object obj = null;
 		try {
-			reader = new FileReader("D:\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\TestData\\Data_TableDataSearch.json");
+			reader = new FileReader(System.getProperty("user.dir") + prop.getProperty("TestDataFile_JSON") );
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

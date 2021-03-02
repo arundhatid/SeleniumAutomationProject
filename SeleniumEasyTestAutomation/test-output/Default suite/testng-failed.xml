@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumeasy.test.Tests.InputFormValidationTest">
+      <class name="seleniumeasy.test.Tests.TablePaginationTest">
         <methods>
-          <include name="setUP"/>
+          <include name="verifyTableHeader"/>
           <include name="tearDown"/>
-          <include name="validateInputForm" invocation-numbers="0"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- seleniumeasy.test.Tests.InputFormValidationTest -->
+      </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

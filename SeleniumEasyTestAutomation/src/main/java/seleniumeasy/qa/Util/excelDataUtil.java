@@ -36,7 +36,7 @@ public class excelDataUtil extends Base
 		
 	}
 	
-	public static Object[][] readExcelFile()
+	public static Object[][] readExcelFile(String sSheetName)
 	{
 		XSSFSheet sheet;
 		
@@ -44,9 +44,9 @@ public class excelDataUtil extends Base
 		int colCount;
 		Object data[][];
 		
-		String sFile = "D:\\Arundhati\\Testing\\GitRepository\\SeleniumAutomationProject\\SeleniumEasyTestAutomation\\src\\main\\java\\seleniumeasy\\qa\\TestData\\InputFormValidationData.xlsx";
+		String sFile = System.getProperty("user.dir") +  prop.getProperty("TestDataFile_Excel");
 		XSSFWorkbook workbook=openExcelFile(sFile);
-		sheet = workbook.getSheet("InputFormValidationData");
+		sheet = workbook.getSheet(sSheetName);
 		rowCount = sheet.getPhysicalNumberOfRows()-1;
 		colCount = sheet.getRow(0).getLastCellNum();
 		data = new Object[rowCount][colCount];

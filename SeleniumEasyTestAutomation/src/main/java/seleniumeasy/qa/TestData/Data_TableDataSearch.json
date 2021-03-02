@@ -1,6 +1,6 @@
 {
-	"searchAsignee" : 
-	[
+"searchAsignee" : 
+[
 		{
 			"TestDataNo":"1",
 			"asignee":"Smith"
@@ -10,10 +10,10 @@
 			"asignee":"John"
 		}
 	
-	]
+]
 
-	"searchUsers" : 
-	[
+"searchUsers" : 
+[
 		{
 			"TestDataNo":"1",
 			"username":"markino"
@@ -28,6 +28,6 @@
 		}
 	
 
-	]
+]
 
 }

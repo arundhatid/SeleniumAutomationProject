@@ -49,7 +49,7 @@ public class InputFormValidationTest extends Base{
 	@DataProvider
 	public Object[][] getInputData()
 	{
-		Object data[][] = excelDataUtil.readExcelFile();
+		Object data[][] = excelDataUtil.readExcelFile("InputFormValidationData");
 		//System.out.println("Data inside data provider is as followes:");
 		//System.out.println(data.toString());
 		return data;
