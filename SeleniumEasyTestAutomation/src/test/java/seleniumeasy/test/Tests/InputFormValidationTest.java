@@ -16,7 +16,7 @@ import seleniumeasy.qa.Page.InputFormValidationPage;
 import seleniumeasy.qa.Page.managePopupWindowPage;
 import seleniumeasy.qa.Util.excelDataUtil;
 
-@Listeners(seleniumeasy.qa.Util.TestListener.class)
+//@Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class InputFormValidationTest extends Base{
 
 	InputFormValidationPage obj;

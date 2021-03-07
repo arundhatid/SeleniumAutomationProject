@@ -6,9 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-//import org.testng.annotations.Listeners;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -21,6 +20,19 @@ import seleniumeasy.qa.Page.tblDataSearchPage;
 import seleniumeasy.qa.Page.tblPaginationPage;
 import seleniumeasy.qa.Util.commonUtil;
 
+
+
+
+
+//@Listeners(seleniumeasy.qa.Util.TestListener.class)
+//Comment to push data 
+//one more comment added
+
+@Listeners(seleniumeasy.qa.Util.TestListener.class)
+	
+
+
+
 //@Listeners(seleniumeasy.qa.Util.TestListener.class)
 //Comment to push data 
 //one more comment added
@@ -28,6 +40,7 @@ import seleniumeasy.qa.Util.commonUtil;
 //@Listeners(seleniumeasy.qa.Util.TestListener.class)
 public class tblDataSearchTest extends Base
 {
+	
 
 	//SoftAssert sAssert;
 	tblPaginationPage tObj;
@@ -140,10 +153,6 @@ public class tblDataSearchTest extends Base
 	}
 	
 	
-		/*@AfterClass
-	public void closeConnection()
-	{
-		//postCleanUp();
-	}*/
-
+	
+	
 }

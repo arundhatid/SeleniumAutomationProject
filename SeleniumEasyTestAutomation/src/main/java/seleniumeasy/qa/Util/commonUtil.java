@@ -9,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -22,12 +23,16 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 
 import io.qameta.allure.Allure;
 import seleniumeasy.qa.Base.Base;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class commonUtil extends Base {
 	
@@ -80,7 +85,7 @@ public class commonUtil extends Base {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		Allure.step("Screenshot captured At :  " + System.getProperty("user.dir") + sScreenShotFolderPath);
 	}
 	public static ITestContext setContext(ITestContext iTestContext, WebDriver driver)
 	{
@@ -215,6 +220,28 @@ public class commonUtil extends Base {
 		return data;		
 		
 	}
+	
+	public static void EnterData(formData sEnterDataList)
+	{
+		LinkedHashMap<WebElement,String> sDataList = (LinkedHashMap<WebElement, String>) sEnterDataList.getMap();
+	
+		
+		for(Map.Entry<WebElement, String> element:sDataList.entrySet())
+		{
+			System.out.println("Element key is: " + element.getKey().toString());
+			if(element.getKey().toString().contains("Select"))
+			{
+				Select comboSelect = new Select(element.getKey());
+				comboSelect.selectByVisibleText(element.getValue());
+			}
+			else
+			{
+				element.getKey().sendKeys(element.getValue());
+			}
+		}
+		
+	}
+
 
 }
 			

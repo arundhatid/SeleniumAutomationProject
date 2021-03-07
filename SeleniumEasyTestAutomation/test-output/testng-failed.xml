@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuit]">
-  <listeners>
-    <listener class-name="seleniumeasy.qa.Util.TestListener"/>
-    <listener class-name="seleniumeasy.qa.Util.ExtentReportListener"/>
-  </listeners>
-  <test name="Regression(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="seleniumeasy.test.Tests.BrokenLinkTest">
-        <methods>
-          <include name="postCleanUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.BrokenLinkTest -->
       <class name="seleniumeasy.test.Tests.InputFormValidationTest">
         <methods>
           <include name="setUP"/>
           <include name="tearDown"/>
+          <include name="validateInputForm" invocation-numbers="0"/>
         </methods>
       </class> <!-- seleniumeasy.test.Tests.InputFormValidationTest -->
-      <class name="seleniumeasy.test.Tests.TablePaginationTest">
-        <methods>
-          <include name="verifyTableHeader"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.TablePaginationTest -->
-      <class name="seleniumeasy.test.Tests.tblDataSearchTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="assertAllTests"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.tblDataSearchTest -->
-      <class name="seleniumeasy.test.Tests.HomePageTest">
-        <methods>
-          <include name="postCleanUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.HomePageTest -->
-      <class name="seleniumeasy.test.Tests.ManagePopupWindowTest">
-        <methods>
-          <include name="postCleanUp"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- seleniumeasy.test.Tests.ManagePopupWindowTest -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [AutomationSuit] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
